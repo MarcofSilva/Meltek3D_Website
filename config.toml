@@ -9,6 +9,9 @@ googleAnalytics = "" # Ex: UA-123-45 #TODO
 # language
 defaultContentLanguage = "pt"
 disableLanguages = [] # disable language from here
+# urls
+relativeURLs = "true"
+uglyURLs = "false"
 
 #################################### Plugins ##########################################
 
