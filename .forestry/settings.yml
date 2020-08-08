@@ -38,13 +38,13 @@ sections:
   path: content/english/terms-conditions/_index.md
   label: Terms & Conditions (en)
 - type: document
-  path: content/portuguese/terms-conditions
+  path: content/portuguese/terms-conditions/_index.md
   label: Terms & Conditions (pt)
 - type: document
-  path: content/english/privacy-policy
+  path: content/english/privacy-policy/_index.md
   label: Privacy Policy (en)
 - type: document
-  path: content/portuguese/privacy-policy
+  path: content/portuguese/privacy-policy/_index.md
   label: Privacy Policy (pt)
 - type: heading
   label: Homepage
