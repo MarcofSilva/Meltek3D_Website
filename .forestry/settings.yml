@@ -4,20 +4,41 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Data
 - type: directory
-  path: content
-  label: Pages
+  path: data/en
+  label: en
   create: all
-  match: "*"
+  match: "**/*"
+- type: directory
+  path: data/pt
+  label: pt
+  create: all
+  match: "**/*"
+- type: directory
+  path: i18n
+  label: i18n
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".toml"
+- type: heading
+  label: Content
+- type: directory
+  path: content/english
+  label: English
+  create: all
+  match: "**/*"
 - type: directory
   path: content/portuguese
   label: Portuguese
   create: all
   match: "**/*"
-- type: directory
-  path: content/english
-  label: English
-  create: all
+- type: heading
+  label: Configuration
+- type: document
+  path: config.toml
+  label: Config
   match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
