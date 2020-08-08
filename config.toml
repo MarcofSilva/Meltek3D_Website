@@ -51,7 +51,7 @@ copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By 
 # homepage section menu
 [[Languages.en.menu.main]]
 name = "Home"
-URL = "/"
+URL = "/" #FIXME this button is given problems because of the translation
 weight = 1
 
 # main menu
