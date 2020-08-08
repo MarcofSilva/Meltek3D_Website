@@ -4,27 +4,20 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: content/english/contact/_index.md
-  label: Contact Info (en)
-  match: "**/*"
 - type: heading
   label: Content - English
 - type: heading
   label: Content - Portuguese
 - type: heading
-  label: Content (Info) - English
-- type: directory
-  path: content/english/contact
-  label: Contact Info
-  create: all
-  match: "**/*"
+  label: Info - English
+- type: document
+  path: content/english/contact/_index.md
+  label: Contact Info (en)
 - type: heading
-  label: Content (Info) - Portuguese
-- type: directory
-  path: content/portuguese/contact
-  label: Contact Info
-  create: all
+  label: Info - Portuguese
+- type: document
+  path: content/portuguese/contact/_index.md
+  label: Contact Info (pt)
   match: "**/*"
 - type: heading
   label: Homepage
