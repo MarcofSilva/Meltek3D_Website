@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
-  label: Content - English
+  label: Content
 - type: directory
   path: content/english/products
   label: Products (en)
@@ -26,8 +26,6 @@ sections:
   label: Blog (pt)
   create: documents
   match: "**/*"
-- type: heading
-  label: Content - Portuguese
 - type: heading
   label: Info - English
 - type: document
