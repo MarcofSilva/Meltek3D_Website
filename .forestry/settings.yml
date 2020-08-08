@@ -5,6 +5,22 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: uy
+- type: heading
+  label: Content - English
+- type: directory
+  path: content/english
+  label: English
+  create: all
+  match: "**/*"
+- type: heading
+  label: Content - Portuguese
+- type: directory
+  path: content/portuguese
+  label: Portuguese
+  create: all
+  match: "**/*"
+- type: heading
   label: Homepage
 - type: document
   path: data/en/homepage.yml
@@ -28,22 +44,10 @@ sections:
   exclude: homepage.yml
 - type: directory
   path: i18n
-  label: i18n
+  label: Translation Strings (i18n)
   create: documents
   match: "**/*"
   new_doc_ext: toml
-- type: heading
-  label: Content
-- type: directory
-  path: content/english
-  label: English
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/portuguese
-  label: Portuguese
-  create: all
-  match: "**/*"
 - type: heading
   label: Configuration
 - type: document
