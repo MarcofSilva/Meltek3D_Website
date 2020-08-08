@@ -12,15 +12,13 @@ sections:
   create: documents
   match: "**/*"
 - type: directory
-  path: content/english/blog
-  label: Blog (en)
-  create: documents
-  match: "**/*"
-- type: heading
-  label: Content - Portuguese
-- type: directory
   path: content/portuguese/products
   label: Products (pt)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/english/blog
+  label: Blog (en)
   create: documents
   match: "**/*"
 - type: directory
@@ -28,6 +26,8 @@ sections:
   label: Blog (pt)
   create: documents
   match: "**/*"
+- type: heading
+  label: Content - Portuguese
 - type: heading
   label: Info - English
 - type: document
