@@ -6,8 +6,28 @@ webhook_url:
 sections:
 - type: heading
   label: Content - English
+- type: directory
+  path: content/english/products
+  label: Products (en)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/english/blog
+  label: Blog (en)
+  create: documents
+  match: "**/*"
 - type: heading
   label: Content - Portuguese
+- type: directory
+  path: content/portuguese/products
+  label: Products (pt)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/portuguese/blog
+  label: Blog (pt)
+  create: documents
+  match: "**/*"
 - type: heading
   label: Info - English
 - type: document
@@ -18,7 +38,6 @@ sections:
 - type: document
   path: content/portuguese/contact/_index.md
   label: Contact Info (pt)
-  match: "**/*"
 - type: heading
   label: Homepage
 - type: document
