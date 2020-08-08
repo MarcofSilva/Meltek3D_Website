@@ -25,6 +25,7 @@ sections:
   label: pt
   create: all
   match: "**/*"
+  exclude: homepage.yml
 - type: directory
   path: i18n
   label: i18n
