@@ -6,16 +6,20 @@ webhook_url:
 sections:
 - type: heading
   label: Content - English
+- type: heading
+  label: Content - Portuguese
+- type: heading
+  label: Content (Info) - English
 - type: directory
-  path: content/english
-  label: English
+  path: content/english/contact
+  label: Contact Info
   create: all
   match: "**/*"
 - type: heading
-  label: Content - Portuguese
+  label: Content (Info) - Portuguese
 - type: directory
-  path: content/portuguese
-  label: Portuguese
+  path: content/portuguese/contact
+  label: Contact Info
   create: all
   match: "**/*"
 - type: heading
