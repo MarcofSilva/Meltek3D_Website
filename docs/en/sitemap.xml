@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/en/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/tags/"
+                />
+  </url>
+  
+</urlset>
