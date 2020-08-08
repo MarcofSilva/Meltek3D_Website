@@ -12,24 +12,32 @@ sections:
   create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - product
 - type: directory
   path: content/portuguese/products
   label: Products (pt)
   create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - product
 - type: directory
   path: content/english/blog
   label: Blog (en)
   create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - post
 - type: directory
   path: content/portuguese/blog
   label: Blog (pt)
   create: documents
   match: "**/*"
   exclude: _index.md
+  templates:
+  - post
 - type: heading
   label: Info
 - type: document
