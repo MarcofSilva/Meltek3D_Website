@@ -27,12 +27,10 @@ sections:
   create: documents
   match: "**/*"
 - type: heading
-  label: Info - English
+  label: Info
 - type: document
   path: content/english/contact/_index.md
   label: Contact Info (en)
-- type: heading
-  label: Info - Portuguese
 - type: document
   path: content/portuguese/contact/_index.md
   label: Contact Info (pt)
