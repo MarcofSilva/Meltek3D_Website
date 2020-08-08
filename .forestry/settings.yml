@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: content/english/contact/_index.md
+  label: Contact Info (en)
+  match: "**/*"
 - type: heading
   label: Content - English
 - type: heading
