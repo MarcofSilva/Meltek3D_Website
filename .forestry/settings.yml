@@ -9,11 +9,9 @@ sections:
 - type: document
   path: data/en/homepage.yml
   label: Homepage (en)
-  match: "**/*"
 - type: document
   path: data/pt/homepage.yml
   label: Homepage (pt)
-  match: "**/*"
 - type: heading
   label: Data
 - type: directory
@@ -21,6 +19,7 @@ sections:
   label: en
   create: all
   match: "**/*"
+  exclude: homepage.yml
 - type: directory
   path: data/pt
   label: pt
