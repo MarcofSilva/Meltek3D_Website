@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>./</loc>
+    <loc>https://marcofsilva.github.io/3DWebsite/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="./en/"
+                href="https://marcofsilva.github.io/3DWebsite/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="./"
+                href="https://marcofsilva.github.io/3DWebsite/"
                 />
   </url>
   
   <url>
-    <loc>./categories.html</loc>
+    <loc>https://marcofsilva.github.io/3DWebsite/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="./en/categories.html"
+                href="https://marcofsilva.github.io/3DWebsite/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="./categories.html"
+                href="https://marcofsilva.github.io/3DWebsite/categories/"
                 />
   </url>
   
   <url>
-    <loc>./contact.html</loc>
+    <loc>https://marcofsilva.github.io/3DWebsite/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="./en/contact.html"
+                href="https://marcofsilva.github.io/3DWebsite/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="./contact.html"
+                href="https://marcofsilva.github.io/3DWebsite/contact/"
                 />
   </url>
   
   <url>
-    <loc>./tags.html</loc>
+    <loc>https://marcofsilva.github.io/3DWebsite/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="./en/tags.html"
+                href="https://marcofsilva.github.io/3DWebsite/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="./tags.html"
+                href="https://marcofsilva.github.io/3DWebsite/tags/"
                 />
   </url>
   

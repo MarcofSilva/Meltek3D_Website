@@ -1,5 +1,5 @@
 ################################### Default Configuration ############################
-baseURL = "./"
+baseURL = "https://marcofsilva.github.io/3DWebsite/"
 title = "3D Oils or Something" #TODO update after choosing name
 theme = "vex-hugo"
 # post excert
@@ -11,7 +11,7 @@ defaultContentLanguage = "pt"
 disableLanguages = [] # disable language from here
 # urls
 relativeURLs = "true"
-uglyURLs = "true"
+uglyURLs = "false"
 
 #################################### Plugins ##########################################
 
