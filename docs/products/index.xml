@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3D Oils or Something</title>
-    <link>https://marcofsilva.github.io/3DWebsite/</link>
-    <description>Recent content on 3D Oils or Something</description>
+    <title>Todos os mais recentes Relógios Inteligentes on 3D Oils or Something</title>
+    <link>https://marcofsilva.github.io/3DWebsite/products/</link>
+    <description>Recent content in Todos os mais recentes Relógios Inteligentes on 3D Oils or Something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-pt</language>
     <copyright>Projetado Por [Themefisher](https://themefisher.com/) &amp; Desenvolvido Por [Gethugothemes](https://gethugothemes.com/)</copyright>
     <lastBuildDate>Thu, 17 Oct 2019 11:22:16 +0600</lastBuildDate>
     
-	<atom:link href="https://marcofsilva.github.io/3DWebsite/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marcofsilva.github.io/3DWebsite/products/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Como escolher o relógio indicado para si.</title>
-      <link>https://marcofsilva.github.io/3DWebsite/blog/post-1/</link>
-      <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
-      
-      <guid>https://marcofsilva.github.io/3DWebsite/blog/post-1/</guid>
-      <description>#TODO delete this post and create new posts with hugo new for date and such&amp;hellip;after adding the front_matter template creating in forestry will include all the necessary info</description>
-    </item>
     
     <item>
       <title>Relógio Apple</title>

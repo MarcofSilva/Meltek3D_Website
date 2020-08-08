@@ -4,6 +4,7 @@
   
   <url>
     <loc>https://marcofsilva.github.io/3DWebsite/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +14,81 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://marcofsilva.github.io/3DWebsite/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/blog/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/blog/post-1/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/blog/post-1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/blog/post-1/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/products/product-1/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/products/product-1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/products/product-1/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/products/product-2/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/products/product-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/products/product-2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/products/</loc>
+    <lastmod>2019-10-17T11:22:16+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/products/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/products/"
                 />
   </url>
   
@@ -55,6 +131,34 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://marcofsilva.github.io/3DWebsite/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/privacy-policy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/privacy-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/privacy-policy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://marcofsilva.github.io/3DWebsite/terms-conditions/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://marcofsilva.github.io/3DWebsite/en/terms-conditions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://marcofsilva.github.io/3DWebsite/terms-conditions/"
                 />
   </url>
   
