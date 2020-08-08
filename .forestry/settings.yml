@@ -5,6 +5,16 @@ admin_path:
 webhook_url: 
 sections:
 - type: heading
+  label: Homepage
+- type: document
+  path: data/en/homepage.yml
+  label: Homepage (en)
+  match: "**/*"
+- type: document
+  path: data/pt/homepage.yml
+  label: Homepage (pt)
+  match: "**/*"
+- type: heading
   label: Data
 - type: directory
   path: data/en
