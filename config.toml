@@ -1,9 +1,9 @@
 ################################### Default Configuration ############################
 baseURL = "./"
-title = "3D Oils" #TODO update after choosing name
+title = "3D Oils or Something" #TODO update after choosing name
 theme = "vex-hugo"
 # post excert
-summarylength = "20"
+summarylength = "20" #TODO
 # google analytics
 googleAnalytics = "" # Ex: UA-123-45 #TODO
 # language
@@ -11,7 +11,7 @@ defaultContentLanguage = "pt"
 disableLanguages = [] # disable language from here
 # urls
 relativeURLs = "true"
-uglyURLs = "false"
+uglyURLs = "true"
 
 #################################### Plugins ##########################################
 
@@ -110,7 +110,7 @@ name = "Página Inicial"
 URL = "/"
 weight = 1
 
-# main menu
+# main menu #TODO what stays and what goes
 [[Languages.pt.menu.main]]
 name = "Produtos"
 URL = "products"
@@ -152,7 +152,7 @@ weight = 4
 
 ########################### Default parameters ##########################
 [params]
-logo = "images/logo.png" #TODO update logo
+#logo = "images/logo.png" #TODO update logo (image with logo and name...if not using logo just keep this commented and the title will be placed in the left side of the header)
 logo_width = "100px"
 # Meta data
 description = "This is meta description"

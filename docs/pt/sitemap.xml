@@ -17,30 +17,44 @@
   </url>
   
   <url>
-    <loc>./categories/</loc>
+    <loc>./categories.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="./en/categories/"
+                href="./en/categories.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="./categories/"
+                href="./categories.html"
                 />
   </url>
   
   <url>
-    <loc>./tags/</loc>
+    <loc>./contact.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="./en/tags/"
+                href="./en/contact.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="./tags/"
+                href="./contact.html"
+                />
+  </url>
+  
+  <url>
+    <loc>./tags.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="./en/tags.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="./tags.html"
                 />
   </url>
   

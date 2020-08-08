@@ -1,0 +1,21 @@
+[add_to_cart]
+other = "Add to Cart"
+
+[send]
+other = "Send"
+
+[read_more]
+other = "Read More"
+
+[subscribe]
+other = "Subscribe"
+
+#Form
+[your_name]
+other = "Your Name"
+
+[your_email]
+other = "Your Email"
+
+[your_message]
+other = "Your Message"
