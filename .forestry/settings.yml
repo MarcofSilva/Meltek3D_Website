@@ -35,21 +35,17 @@ sections:
   path: content/portuguese/contact/_index.md
   label: Contact Info (pt)
 - type: document
-  path: content/english/terms-conditions
+  path: content/english/terms-conditions/_index.md
   label: Terms & Conditions (en)
-  match: "**/*"
 - type: document
   path: content/portuguese/terms-conditions
   label: Terms & Conditions (pt)
-  match: "**/*"
 - type: document
   path: content/english/privacy-policy
   label: Privacy Policy (en)
-  match: "**/*"
 - type: document
   path: content/portuguese/privacy-policy
   label: Privacy Policy (pt)
-  match: "**/*"
 - type: heading
   label: Homepage
 - type: document
