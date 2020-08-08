@@ -1,0 +1,100 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: heading
+  label: Content
+- type: directory
+  path: content/english/products
+  label: Products (en)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/portuguese/products
+  label: Products (pt)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/english/blog
+  label: Blog (en)
+  create: documents
+  match: "**/*"
+- type: directory
+  path: content/portuguese/blog
+  label: Blog (pt)
+  create: documents
+  match: "**/*"
+- type: heading
+  label: Info
+- type: document
+  path: content/english/contact/_index.md
+  label: Contact Info (en)
+- type: document
+  path: content/portuguese/contact/_index.md
+  label: Contact Info (pt)
+- type: document
+  path: content/english/terms-conditions
+  label: Terms & Conditions (en)
+  match: "**/*"
+- type: document
+  path: content/portuguese/terms-conditions
+  label: Terms & Conditions (pt)
+  match: "**/*"
+- type: document
+  path: content/english/privacy-policy
+  label: Privacy Policy (en)
+  match: "**/*"
+- type: document
+  path: content/portuguese/privacy-policy
+  label: Privacy Policy (pt)
+  match: "**/*"
+- type: heading
+  label: Homepage
+- type: document
+  path: data/en/homepage.yml
+  label: Homepage (en)
+- type: document
+  path: data/pt/homepage.yml
+  label: Homepage (pt)
+- type: heading
+  label: Data
+- type: directory
+  path: data/en
+  label: en
+  create: all
+  match: "**/*"
+  exclude: homepage.yml
+- type: directory
+  path: data/pt
+  label: pt
+  create: all
+  match: "**/*"
+  exclude: homepage.yml
+- type: directory
+  path: i18n
+  label: Translation Strings (i18n)
+  create: documents
+  match: "**/*"
+  new_doc_ext: toml
+- type: heading
+  label: Configuration
+- type: document
+  path: config.toml
+  label: Config
+upload_dir: static/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.71.1
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: hugo server -D -E -F --renderToDisk -d public
+version: 0.71.1
