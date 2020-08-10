@@ -11,7 +11,7 @@ office:
 
 # opennig hour
 opennig_hour:
-  title : "Opening Hours"
+  title : "Horário de Funcionamento"
   day_time:
     - "Segunda: 9:00 – 19:00"
     - "Terça: 9:00 – 19:00"
