@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: heading
@@ -11,21 +11,33 @@ sections:
   label: Products (en)
   create: documents
   match: "**/*"
+  exclude: _index.md
+  templates:
+  - product
 - type: directory
   path: content/portuguese/products
   label: Products (pt)
   create: documents
   match: "**/*"
+  exclude: _index.md
+  templates:
+  - product
 - type: directory
   path: content/english/blog
   label: Blog (en)
   create: documents
   match: "**/*"
+  exclude: _index.md
+  templates:
+  - post
 - type: directory
   path: content/portuguese/blog
   label: Blog (pt)
   create: documents
   match: "**/*"
+  exclude: _index.md
+  templates:
+  - post
 - type: heading
   label: Info
 - type: document
@@ -35,21 +47,17 @@ sections:
   path: content/portuguese/contact/_index.md
   label: Contact Info (pt)
 - type: document
-  path: content/english/terms-conditions
+  path: content/english/terms-conditions/_index.md
   label: Terms & Conditions (en)
-  match: "**/*"
 - type: document
-  path: content/portuguese/terms-conditions
+  path: content/portuguese/terms-conditions/_index.md
   label: Terms & Conditions (pt)
-  match: "**/*"
 - type: document
-  path: content/english/privacy-policy
+  path: content/english/privacy-policy/_index.md
   label: Privacy Policy (en)
-  match: "**/*"
 - type: document
-  path: content/portuguese/privacy-policy
+  path: content/portuguese/privacy-policy/_index.md
   label: Privacy Policy (pt)
-  match: "**/*"
 - type: heading
   label: Homepage
 - type: document
@@ -83,8 +91,8 @@ sections:
 - type: document
   path: config.toml
   label: Config
-upload_dir: static/uploads
-public_path: "/uploads"
+upload_dir: static/images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
