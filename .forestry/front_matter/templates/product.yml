@@ -9,17 +9,9 @@ fields:
   name: date
   label: date
 - name: images
-  type: list
-  config:
-    use_select: true
-    min: 1
-    max: 
-    source:
-      type: simple
+  type: image_gallery
+  config: {}
   label: images
-- type: file
-  name: image
-  label: image
 - type: text
   name: description
   label: description
