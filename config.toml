@@ -1,21 +1,93 @@
-################################### Default Configuration ############################
 baseURL = "https://marcofsilva.github.io/3DWebsite/"
-title = "3D Oils or Something" #TODO update after choosing name
-theme = "vex-hugo"
-# post excert
-summarylength = "20" #TODO
-# google analytics
-googleAnalytics = "" # Ex: UA-123-45 #TODO
-# language
 defaultContentLanguage = "pt"
-disableLanguages = [] # disable language from here
-# urls
-#relativeURLs = "true"
-#uglyURLs = "false"
-
-#################################### Plugins ##########################################
-
-# CSS Plugins
+disableLanguages = []
+googleAnalytics = ""
+summarylength = "20"
+theme = "vex-hugo"
+title = "3D Oils"
+[Languages.en]
+contentDir = "content/english"
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+languageCode = "en-us"
+languageName = "En"
+weight = 1
+[[Languages.en.menu.footer]]
+URL = "blog"
+name = "Blog"
+weight = 1
+[[Languages.en.menu.footer]]
+URL = "contact"
+name = "Contact"
+weight = 2
+[[Languages.en.menu.footer]]
+URL = "terms-conditions"
+name = "Terms & Conditions"
+weight = 3
+[[Languages.en.menu.footer]]
+URL = "privacy-policy"
+name = "Privacy Policy"
+weight = 4
+[[Languages.en.menu.main]]
+URL = "/"
+name = "Home"
+weight = 1
+[[Languages.en.menu.main]]
+URL = "products"
+name = "Products"
+weight = 2
+[[Languages.en.menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+[[Languages.en.menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 4
+[Languages.pt]
+contentDir = "content/portuguese"
+copyright = "Projetado Por [Themefisher](https://themefisher.com/) & Desenvolvido Por [Gethugothemes](https://gethugothemes.com/)"
+languageCode = "pt-pt"
+languageName = "Pt"
+weight = 2
+[[Languages.pt.menu.footer]]
+URL = "blog"
+name = "Blog"
+weight = 1
+[[Languages.pt.menu.footer]]
+URL = "contact"
+name = "Contactos"
+weight = 2
+[[Languages.pt.menu.footer]]
+URL = "terms-conditions"
+name = "Termos & Condições"
+weight = 3
+[[Languages.pt.menu.footer]]
+URL = "privacy-policy"
+name = "Política de Privacidade"
+weight = 4
+[[Languages.pt.menu.main]]
+URL = "/"
+name = "Página Inicial"
+weight = 1
+[[Languages.pt.menu.main]]
+URL = "products"
+name = "Produtos"
+weight = 2
+[[Languages.pt.menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+[[Languages.pt.menu.main]]
+URL = "contact"
+name = "Contactos"
+weight = 4
+[params]
+author = "Marco Silva"
+contact_form_action = "#"
+currency = "€"
+description = "This is meta description"
+logo_width = "100px"
+snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Droid+Serif:400|Josefin+Sans:300,400,600,700"
 [[params.plugins.css]]
@@ -26,8 +98,6 @@ link = "plugins/themefisher-font/themefisher-font.min.css"
 link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
-
-# JS Plugins
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.js"
 [[params.plugins.js]]
@@ -36,141 +106,9 @@ link = "plugins/bootstrap/bootstrap.min.js"
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
-
-
-################################### English language #####################################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
-# copyright
-copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)" #TODO donation Copyright c 2020 <name_of_site>
-
-############################ Navigation (English) ############################
-# homepage section menu
-[[Languages.en.menu.main]]
-name = "Home"
-URL = "/" #FIXME this button is given problems because of the translation
-weight = 1
-
-# main menu
-[[Languages.en.menu.main]]
-name = "Products"
-URL = "products"
-weight = 2
-
-# main menu
-[[Languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 3
-
-[[Languages.en.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 4
-
-# footer menu
-[[Languages.en.menu.footer]]
-name = "Blog"
-URL = "blog"
-weight = 1
-
-[[Languages.en.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 2
-
-[[Languages.en.menu.footer]]
-name = "Terms & Conditions"
-URL = "terms-conditions"
-weight = 3
-
-[[Languages.en.menu.footer]]
-name = "Privacy Policy"
-URL = "privacy-policy"
-weight = 4
-
-
-
-################################### French language #####################################
-[Languages.pt]
-languageName = "Pt"
-languageCode = "pt-pt"
-contentDir = "content/portuguese"
-weight = 2
-# copyright
-copyright = "Projetado Por [Themefisher](https://themefisher.com/) & Desenvolvido Por [Gethugothemes](https://gethugothemes.com/)" #TODO donation Copyright c 2020 <name_of_site>
-
-############################ Navigation (Portuguese) ############################
-# homepage section menu
-[[Languages.pt.menu.main]]
-name = "Página Inicial"
-URL = "/"
-weight = 1
-
-# main menu #TODO what stays and what goes
-[[Languages.pt.menu.main]]
-name = "Produtos"
-URL = "products"
-weight = 2
-
-# main menu
-[[Languages.pt.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 3
-
-[[Languages.pt.menu.main]]
-name = "Contactos"
-URL = "contact"
-weight = 4
-
-# footer menu
-[[Languages.pt.menu.footer]]
-name = "Blog"
-URL = "blog"
-weight = 1
-
-[[Languages.pt.menu.footer]]
-name = "Contactos"
-URL = "contact"
-weight = 2
-
-[[Languages.pt.menu.footer]]
-name = "Termos & Condições"
-URL = "terms-conditions"
-weight = 3
-
-[[Languages.pt.menu.footer]]
-name = "Política de Privacidade"
-URL = "privacy-policy"
-weight = 4
-
-
-
-########################### Default parameters ##########################
-[params]
-#logo = "images/logo.png" #TODO update logo (image with logo and name...if not using logo just keep this commented and the title will be placed in the left side of the header)
-logo_width = "100px"
-# Meta data
-description = "This is meta description"
-author = "Marco Silva"
-# currency
-currency = "€"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io #TODO
-# snipcart public api key
-snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4" #TODO
-
-# Preloader
 [params.preloader]
 enable = true
-preloader = "" # use .png , .svg or .gif format
-
-# Subscription
+preloader = ""
 [params.subscription]
-# mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours #TODO
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours #TODO
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
