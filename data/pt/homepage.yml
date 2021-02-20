@@ -3,7 +3,7 @@ banner:
   enable : true
   title : "Acredita na Tecnologia , Faz a mudança"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
-  image : "images/watch.png"
+  image : "images/blue_box.jpeg" #TODO png?? resolution
   button:
    enable : true
    label : "Ver todos os Produtos"

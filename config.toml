@@ -1,10 +1,14 @@
+################################### Default Configuration ############################
 baseURL = "https://marcofsilva.github.io/Meltek3D_Website/"
 defaultContentLanguage = "pt"
 disableLanguages = []
 googleAnalytics = ""
 summarylength = "20"
 theme = "vex-hugo"
-title = "3D Oils"
+title = "Meltek3D"
+
+#################################### Languages - Menu ##################################
+# English
 [Languages.en]
 contentDir = "content/english"
 copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
@@ -43,6 +47,8 @@ weight = 3
 URL = "contact"
 name = "Contact"
 weight = 4
+
+# Portuguese
 [Languages.pt]
 contentDir = "content/portuguese"
 copyright = "Projetado Por [Themefisher](https://themefisher.com/) & Desenvolvido Por [Gethugothemes](https://gethugothemes.com/)"
@@ -81,13 +87,9 @@ weight = 3
 URL = "contact"
 name = "Contactos"
 weight = 4
-[params]
-author = "Marco Silva"
-contact_form_action = "#"
-currency = "€"
-description = "This is meta description"
-logo_width = "100px"
-snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
+
+#################################### Plugins ##########################################
+# CSS Plugins
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Droid+Serif:400|Josefin+Sans:300,400,600,700"
 [[params.plugins.css]]
@@ -98,6 +100,8 @@ link = "plugins/themefisher-font/themefisher-font.min.css"
 link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+
+# JS Plugins
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.js"
 [[params.plugins.js]]
@@ -106,9 +110,23 @@ link = "plugins/bootstrap/bootstrap.min.js"
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+
 [params.preloader]
 enable = true
 preloader = ""
+
 [params.subscription]
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074"
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
+
+#################################### Default Params ####################################
+[params]
+author              = "Marco Silva"
+contact_form_action = "#"
+currency            = "€"
+description         = "This is meta description"
+logo_header         = "images/meltek3d_logo_left.png"
+logo_header_width   = "150px"
+logo                = "images/meltek3d_logo_up.png"
+logo_width          = "120px"
+snipcart_api        = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
