@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3D Oils</title>
-    <link>https://marcofsilva.github.io/3DWebsite/</link>
+    <link>https://marcofsilva.github.io/Meltek3D_Website/</link>
     <description>Recent content on 3D Oils</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-pt</language>
     <copyright>Projetado Por [Themefisher](https://themefisher.com/) &amp; Desenvolvido Por [Gethugothemes](https://gethugothemes.com/)</copyright>
-    <lastBuildDate>Thu, 17 Oct 2019 11:22:16 +0600</lastBuildDate><atom:link href="https://marcofsilva.github.io/3DWebsite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Oct 2019 11:22:16 +0600</lastBuildDate><atom:link href="https://marcofsilva.github.io/Meltek3D_Website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Como escolher o relógio indicado para si.</title>
-      <link>https://marcofsilva.github.io/3DWebsite/blog/post-1/</link>
+      <link>https://marcofsilva.github.io/Meltek3D_Website/blog/post-1/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://marcofsilva.github.io/3DWebsite/blog/post-1/</guid>
+      <guid>https://marcofsilva.github.io/Meltek3D_Website/blog/post-1/</guid>
       <description>#TODO delete this post and create new posts with hugo new for date and such&amp;hellip;after adding the front_matter template creating in forestry will include all the necessary info</description>
     </item>
     
     <item>
       <title>Relógio Apple</title>
-      <link>https://marcofsilva.github.io/3DWebsite/products/product-1/</link>
+      <link>https://marcofsilva.github.io/Meltek3D_Website/products/product-1/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://marcofsilva.github.io/3DWebsite/products/product-1/</guid>
+      <guid>https://marcofsilva.github.io/Meltek3D_Website/products/product-1/</guid>
       <description>#TODO apagar este produto e criar com new para cada novo produto
 Relógio Apple é uma linha de relógios inteligentes produzidos pela Apple Inc.</description>
     </item>
     
     <item>
       <title>Relógio Apple</title>
-      <link>https://marcofsilva.github.io/3DWebsite/products/product-2/</link>
+      <link>https://marcofsilva.github.io/Meltek3D_Website/products/product-2/</link>
       <pubDate>Thu, 17 Oct 2019 11:22:16 +0600</pubDate>
       
-      <guid>https://marcofsilva.github.io/3DWebsite/products/product-2/</guid>
+      <guid>https://marcofsilva.github.io/Meltek3D_Website/products/product-2/</guid>
       <description>#TODO apagar este produto e criar com new para cada novo produto
 Relógio Apple é uma linha de relógios inteligentes produzidos pela Apple Inc.</description>
     </item>
