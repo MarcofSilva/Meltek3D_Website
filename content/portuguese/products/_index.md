@@ -1,5 +1,5 @@
 ---
-title: "Todos os mais recentes Relógios Inteligentes"
+title: "Todos os nossos melhores produtos"
 description : "this is a meta description"
 draft: false
 ---

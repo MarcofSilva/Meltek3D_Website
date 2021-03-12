@@ -3,7 +3,7 @@ banner:
   enable : true
   title : "Acredita na Tecnologia , Faz a mudança"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
-  image : "images/blue_box.jpeg" #TODO png?? resolution
+  image : "images/showcase/showcase-2.jpeg"
   button:
    enable : true
    label : "Ver todos os Produtos"
@@ -12,8 +12,8 @@ banner:
 ############################# Feature ############################
 features:
   enable : true
-  title : "As nossas principais Funcionalidades"
-  image : "images/watch-2.png"
+  title : "Principais características"
+  image : "images/showcase/showcase-2.jpeg"
 
   # feature at the left of the image
   left_side:
