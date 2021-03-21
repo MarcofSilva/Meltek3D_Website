@@ -1,0 +1,43 @@
+{{ if .Params.gallery_buy.enable }}
+
+<section class="section">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-5 mb-4 mb-md-0">
+		  <!-- product image slider -->
+		  <div class="product-image-slider">
+			{{ range .Params.images }}
+			<div data-image="{{ . | absURL }}">
+			  <img class="img-fluid w-100" src="{{ . | absURL }}" alt="product-image">
+			</div>
+			{{ end }}
+		  </div>
+		</div>
+		<div class="col-lg-6 col-md-7 offset-lg-1">
+		  <h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>
+		  <p><strong>Colors:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
+		  <p><strong>Sizes:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
+		  <p class="price py-4">{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
+		  {{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
+		  </p>
+		  <button class="snipcart-add-item btn btn-main mb-5" 
+			data-item-id="{{.Params.gallery_buy.Title | urlize}}__{{if .Params.gallery_buy.discount_price}}{{.Params.gallery_buy.discount_price}}{{else}}{{.Params.gallery_buy.price}}{{end}}"
+			data-item-name="{{.Params.gallery_buy.Title}}"
+			data-item-image="{{range first 1 .Params.images}}{{. | absURL}}{{end}}"
+			data-item-price="{{if .Params.gallery_buy.discount_price}}{{.Params.gallery_buy.discount_price}}{{else}}{{.Params.gallery_buy.price}}{{end}}" data-item-url="{{.Permalink}}" 
+			{{ if .Params.gallery_buy.colors }}
+			data-item-custom1-name="Choose Color"
+			data-item-custom1-options="{{range $index, $element:= .Params.gallery_buy.colors}}{{ if eq $index 0 }}{{. | title}}{{ else }}|{{. | title }}{{end}}{{end}}"
+			{{ end }}
+			{{ if .Params.gallery_buy.sizes }}
+			data-item-custom2-name="Choose Size"
+			data-item-custom2-options="{{range $index, $element:= .Params.gallery_buy.sizes}}{{if eq $index 0}}{{. | title}}{{else}}|{{. | title}}{{end}}{{end}}"
+			{{end}}>{{i18n "add_to_cart"}}
+		  </button>
+		  <div class="content">{{.Params.gallery_buy.Content}}</div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+{{ end }}

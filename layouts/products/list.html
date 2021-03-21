@@ -18,8 +18,8 @@
         </div>
         <div class="product-info">
         <h4 class="mb-2">{{.Title}}</h4>
-        <p class="price">{{if .Params.discount_price}}{{site.Params.currency}}{{.Params.discount_price}}{{else}}{{site.Params.currency}}{{.Params.price}}{{end}}
-          {{if .Params.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.price }}</s>{{end}}
+        <p class="price">{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
+          {{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
           </p>
         </div>
       </div>
