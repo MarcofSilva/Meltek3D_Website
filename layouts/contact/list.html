@@ -3,16 +3,22 @@
 <section class="section">
   <div class="container">
     <div class="row justify-content-center">
-      {{ with .Params.office }}
+      {{ with .Params.contacts }}
       <div class="col-lg-5 col-sm-6 mb-5">
         <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         <ul class="list-unstyled contact-list">
-          <li class="mb-3"><a href="tel:{{ .mobile }}"><i class="tf-ion-ios-telephone mr-2"></i>
-              {{ .mobile }}</a></li>
-          <li class="mb-3"><a href="mailto:{{ .email }}"><i class="tf-ion-email mr-2"></i>{{ .email }}</a></li>
-          <li class="mb-3"><i class="tf-ion-ios-location mr-2"></i>{{ .location }}
-          </li>
+          <li class="mb-3"><i class="tf-ion-ios-telephone mr-2"></i><a href="tel:{{ .mobile }}">{{ .mobile }}</a></li>
+          <li class="mb-3"><i class="tf-ion-email mr-2"></i><a href="mailto:{{ .email }}">{{ .email }}</a></li>
+          <li class="mb-3"><i class="tf-ion-ios-location mr-2"></i>{{ .location }}</li>
+          
+          <br>
+
+          <!--Social hyperlinks-->
+          <p><b>{{ .social.title | markdownify }}</b></p>
+          {{ range .social.networks }}
+            <li class="mb-3"><i class="{{ .icon }} mr-2"></i><a href="{{ .link }}">{{ .text }}</a></li>
+          {{ end }}
         </ul>
       </div>
       {{ end }}

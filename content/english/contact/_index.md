@@ -1,8 +1,8 @@
 ---
 title: Contact
 description: this is a meta description
-office:
-  title: Central Office
+contacts:
+  title: Contacts
   mobile: "963852741"
   email: demo@email.com
   location: Dhaka, Bangladedsh

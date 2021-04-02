@@ -2,23 +2,32 @@
 title: "Contactos"
 description : "this is a meta description"
 
-office:
+contacts:
   title : "Contactos"
   mobile : "963852741"
   email : "meltek3d@email.com" #FIXME
   location : "Algarve, Portugal" #TODO Review Algarve?
-  content : "Não hesite em contactar-nos no caso de interesse ou qualquer dúvida. Estamos sempre disponíveis para ajudar"
+  content : 
+  social :
+    title: "Visite-nos nas redes sociais"
+    networks:
+      facebook:
+        text: "facebook.com/Meltek3D"
+        icon: "tf-ion-social-facebook"
+        link: "https://www.facebook.com"
+      #instagram:
+      #  text: "instagram.com/Meltek3D"
+      #  icon: "tf-ion-social-instagram"
+      #  link: "https://www.instagram.com/"
+      #linkedin:
+      #  text: "linkedin.com/Meltek3D"
+      #  icon: "tf-ion-social-linkedin"
+      #  link: "https://www.linkedin.com"
 
 opennig_hour:
-  title : "Horário de Funcionamento"
+  title : "Horário de Atendimento"
   day_time:
-    - "Segunda: 9:00 – 19:00"
-    - "Terça: 9:00 – 19:00"
-    - "Quarta: 9:00 – 19:00"
-    - "Quinta: 9:00 – 19:00"
-    - "Sexta: 9:00 – 19:00"
-    - "Sábado: 9:00 – 19:00"
-    - "Domingo: 9:00 – 19:00"
+    - "Segunda a Sábado: 9:00 – 19:00"
 
 
 enable_form : false
