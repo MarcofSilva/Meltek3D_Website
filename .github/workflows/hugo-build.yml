@@ -3,7 +3,7 @@ name: hugo build & deploy
 on:
   push:
     branches:
-      - release/0.0.1
+      - master
 
 jobs:
   deploy:
