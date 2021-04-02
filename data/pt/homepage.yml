@@ -98,7 +98,7 @@ products:
 
 ################################## Subscription ###################
 subscription:
-  enable : true
+  enable : false
   bg_image : "images/call-to-action.jpg"
   title : "Recebe Novidades do Produto"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
