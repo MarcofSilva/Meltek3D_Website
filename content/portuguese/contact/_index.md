@@ -3,13 +3,12 @@ title: "Contactos"
 description : "this is a meta description"
 
 office:
-  title : "Escritório Principal"
+  title : "Contactos"
   mobile : "963852741"
-  email : "demo@email.com"
-  location : "Dhaka, Bangladedsh"
-  content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna"
+  email : "meltek3d@email.com" #FIXME
+  location : "Algarve, Portugal" #TODO Review Algarve?
+  content : "Não hesite em contactar-nos no caso de interesse ou qualquer dúvida. Estamos sempre disponíveis para ajudar"
 
-# opennig hour
 opennig_hour:
   title : "Horário de Funcionamento"
   day_time:
@@ -20,6 +19,9 @@ opennig_hour:
     - "Sexta: 9:00 – 19:00"
     - "Sábado: 9:00 – 19:00"
     - "Domingo: 9:00 – 19:00"
-    
+
+
+enable_form : false
+
 draft: false
 ---

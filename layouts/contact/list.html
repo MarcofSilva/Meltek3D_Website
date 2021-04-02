@@ -27,6 +27,8 @@
         {{ end }}
       </div>
     </div>
+    <!--Form-->
+    {{ if .Params.enable_form }}}}
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <h2 class="font-weight-bold mb-4">{{ .Title | markdownify }}</h2>
@@ -46,6 +48,7 @@
         </form>
       </div>
     </div>
+    {{ end }}
   </div>
 </section>
 
