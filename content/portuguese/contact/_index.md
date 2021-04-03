@@ -9,6 +9,7 @@ contacts:
   location : "Algarve, Portugal" #TODO Review Algarve?
   content : 
   social :
+    enable: false #TODO true when we have social media
     title: "Visite-nos nas redes sociais"
     networks:
       facebook:
