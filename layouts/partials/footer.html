@@ -3,23 +3,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a>
-          <!--Navigation-->
-          <ul class="list-inline footer-menu">
-            {{ range site.Menus.footer }}
-            <li class="list-inline-item">
-              <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-          </ul>
+          <a href="{{ site.BaseURL | relLangURL }}" class="mb-2 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a>
           <!--Social Media-->
           <!--<ul class="list-inline footer-menu">
-            {{ range site.Menus.footer }}
-            <li class="list-inline-item">
-              <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            </li>
+            {{ range site.Menus.social }}
+              <li class="list-inline-item">
+                <a href="{{ .URL | absLangURL }}"><img class="mr-2" src="{{ .image | absURL }}"></i></a>
+              </li>
             {{ end }}
           </ul>-->
+          <!--Navigation-->
+          <ul class="list-inline footer-menu">
+            <!--<li class="list-inline-item">
+              <a href="https://www.facebook.com"><img class="mr-2" src="{{ site.Params.facebook_icon | absURL }}" width="30px"></i></a> #FIXME upgrade this hardcoded icon
+            </li>-->
+            {{ range site.Menus.footer }}
+              <li class="list-inline-item">
+                <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
           <!--Copyright-->
           <p class="copyright-text">{{ replace site.Params.copyright "{now_year}" now.Year | markdownify }}</p>
         </div>
