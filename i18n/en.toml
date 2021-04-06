@@ -19,3 +19,9 @@ other = "Your Email"
 
 [your_message]
 other = "Your Message"
+
+[404_page_not_found]
+other = "404 Page not found"
+
+[404_go_to_home]
+other = "Go to Homepage"

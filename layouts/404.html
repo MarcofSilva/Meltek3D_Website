@@ -1,7 +1,15 @@
 {{ define "main"}}
-    <main id="main">
-      <div>
-       <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
+
+<section class="section gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1 class="font-weight-bold">{{i18n "404_page_not_found"}}</h1>
+        <div class="mb-5"></div>
+        <a href="{{ "/" | absLangURL}}" class="btn btn-main">{{i18n "404_go_to_home"}}</a>
       </div>
-    </main>
+    </div>
+  </div>
+</section>
+
 {{ end }}

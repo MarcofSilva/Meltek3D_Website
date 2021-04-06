@@ -10,6 +10,13 @@ $primary-color: #f9a743;
 $icon-font: 'themefisher-font' !important;
 
 /*--
+    Dark mode
+--*/
+@media (prefers-color-scheme: dark) {
+  //TODO adapt to support Samsung Browser dark mode (and maybe others, that change the website's colors)
+}
+
+/*--
     Common Css
 --*/
 body {
@@ -160,6 +167,11 @@ a:active {
 /*--
     custom heading
 --*/
+
+#header.active {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .text-center {
   text-align: center;
 }

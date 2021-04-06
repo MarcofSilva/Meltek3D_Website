@@ -1,5 +1,6 @@
 ################################### Default Configuration ############################
-baseURL = "https://marcofsilva.github.io/Meltek3D_Website/"
+baseURL = "https://marcofsilva.github.io/Meltek3D_Website/" #FIXME
+relativeURLs = "true"
 defaultContentLanguage = "pt"
 disableLanguages = ["en"]   #XXX
 googleAnalytics = ""
@@ -19,19 +20,19 @@ title = "Meltek3D"
     languageName = "En"
     weight = 1
 #[[Languages.en.menu.footer]]
-    #URL = "blog"
+    #URL = "/blog"
     #name = "Blog"
     #weight = 1
 [[Languages.en.menu.footer]]
-    URL = "contact"
+    URL = "/contact/#contacts_section"
     name = "Contact"
     weight = 2
 [[Languages.en.menu.footer]]
-    URL = "terms-conditions"
+    URL = "/terms-conditions"
     name = "Terms & Conditions"
     weight = 3
 [[Languages.en.menu.footer]]
-    URL = "privacy-policy"
+    URL = "/privacy-policy"
     name = "Privacy Policy"
     weight = 4
 [[Languages.en.menu.main]]
@@ -39,17 +40,21 @@ title = "Meltek3D"
     name = "Home"
     weight = 1
 [[Languages.en.menu.main]]
-    URL = "products"
+    URL = "/products"
     name = "Products"
     weight = 2
 #[[Languages.en.menu.main]]
-    #URL = "blog"
+    #URL = "/blog"
     #name = "Blog"
     #weight = 3
 [[Languages.en.menu.main]]
-    URL = "contact"
-    name = "Contact"
+    URL = "/contact"
+    name = "About Us"
     weight = 4
+[[Languages.en.menu.main]]
+    URL = "/contact/#contacts_section"
+    name = "Contact"
+    weight = 5
 
 # Portuguese
 [Languages.pt]
@@ -59,19 +64,19 @@ title = "Meltek3D"
     languageName = "Pt"
     weight = 2
 #[[Languages.pt.menu.footer]]
-    #URL = "blog"
+    #URL = "/blog"
     #name = "Blog"
     #weight = 1
 [[Languages.pt.menu.footer]]
-    URL = "contact"
+    URL = "/contact/#contacts_section"
     name = "Contactos"
     weight = 2
 [[Languages.pt.menu.footer]]
-    URL = "terms-conditions"
+    URL = "/terms-conditions"
     name = "Termos & Condições"
     weight = 3
 [[Languages.pt.menu.footer]]
-    URL = "privacy-policy"
+    URL = "/privacy-policy"
     name = "Política de Privacidade"
     weight = 4
 [[Languages.pt.menu.main]]
@@ -79,17 +84,21 @@ title = "Meltek3D"
     name = "Página Inicial"
     weight = 1
 [[Languages.pt.menu.main]]
-    URL = "products"
+    URL = "/products"
     name = "Produtos"
     weight = 2
 #[[Languages.pt.menu.main]]
-    #URL = "blog"
+    #URL = "/blog"
     #name = "Blog"
     #weight = 3
 [[Languages.pt.menu.main]]
-    URL = "contact"
-    name = "Contactos"
+    URL = "/contact"
+    name = "Quem Somos"
     weight = 4
+[[Languages.pt.menu.main]]
+    URL = "/contact/#contacts_section"
+    name = "Contactos"
+    weight = 5
 
 #################################### Plugins ##########################################
 # CSS Plugins
