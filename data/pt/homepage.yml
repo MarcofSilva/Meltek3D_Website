@@ -11,7 +11,7 @@ banner:
 
 ############################# Feature ############################
 features:
-  enable : true
+  enable : false
   title : "Principais características"
   image : "images/showcase/showcase-2.jpeg"
 
