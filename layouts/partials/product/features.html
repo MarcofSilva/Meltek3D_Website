@@ -11,7 +11,7 @@
     </div>
     {{ range $index, $element := .items }}
     {{- if ne (mod $index 2) 1 }}
-    <div class="row mb-40">
+    <div class="row mb-40" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <div class="col-md-6 text-center mb-5 mb-lg-0">
         <img class="img-fluid" src="{{ .image | absURL }}" alt="">
       </div>
@@ -28,7 +28,7 @@
       </div>
     </div>
     {{- else }}
-    <div class="row mb-40">
+    <div class="row mb-40" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
         <div class="content">
           <h4 class="subheading">{{ .title | markdownify }}</h4>

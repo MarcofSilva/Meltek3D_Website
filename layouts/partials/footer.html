@@ -58,3 +58,8 @@
 <!-- Main Script -->
 {{ $script := resources.Get "js/script.js" }}
 <script src="{{ $script.Permalink }}"></script>
+
+<!-- Initialization Scripts-->
+<script>
+  AOS.init();
+</script>

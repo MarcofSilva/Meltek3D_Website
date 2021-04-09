@@ -1,6 +1,7 @@
 ################################### Default Configuration ############################
 baseURL = "https://marcofsilva.github.io/Meltek3D_Website/" #FIXME
 relativeURLs = "true"
+disableKinds = ["taxonomy", "term"]
 defaultContentLanguage = "pt"
 disableLanguages = ["en"]   #XXX
 googleAnalytics = ""
@@ -114,6 +115,8 @@ link = "plugins/slick/slick.min.css"
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
 [[params.plugins.css]]
 link = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+[[params.plugins.css]]
+link = "https://unpkg.com/aos@2.3.1/dist/aos.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -124,6 +127,8 @@ link = "plugins/bootstrap/bootstrap.min.js"
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+[[params.plugins.js]]
+link = "https://unpkg.com/aos@2.3.1/dist/aos.js"
 
 [params.preloader]
 enable = true

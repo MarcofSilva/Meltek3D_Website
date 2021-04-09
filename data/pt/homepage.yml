@@ -93,7 +93,7 @@ about_product:
 #################################### Products ########################
 products:
   enable : true
-  title : "Ver Todos Os Nossos Produtos"
+  title : "Os Nossos Produtos"
 
 
 ################################## Subscription ###################
@@ -107,8 +107,8 @@ subscription:
 
 ############################## Testimonial ##########################
 testimonial:
-  enable : true
-  title : "Avaliação do Relógio"
+  enable : false
+  title : "O que andam a dizer"
   testimonial_item:
     # testimonial item loop
     - name : "Jonathon Andrew"
@@ -120,7 +120,7 @@ testimonial:
     - name : "Jonathon Andrew"
       designation : "CEO, Themefisher"
       image : "images/avater.png"
-      content : "Não sei viver sem este relógio."
+      content : "Não sei viver sem isto."
       
     # testimonial item loop
     - name : "Jonathon Andrew"

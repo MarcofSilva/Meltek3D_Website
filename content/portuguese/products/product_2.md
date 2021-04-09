@@ -5,8 +5,8 @@ date  : 2021-02-24T22:32:39Z
 description : "this is meta description"
 
 images: 
-- "images/products/capsules_6_blue.png"
-- "images/products/capsules_6_red.png"
+- "images/products/capsules_3_red.png"
+- "images/products/capsules_3_blue.png"
 
 #XXX when creating product, give this files a name considering that it will be shown in the url
 
@@ -31,7 +31,7 @@ gallery_buy:
 
   # product variation
   colors: ["azul","vermelho","cinzento"]
-  sizes : ["3","6","12"]
+  sizes : ["3","6"]
   
   description: Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
 
