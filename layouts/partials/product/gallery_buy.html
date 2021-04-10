@@ -18,8 +18,8 @@
 		</div>
 		<div class="col-lg-5 col-md-6 offset-lg-1">
 		  <h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>
-		  <p><strong>Colors:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
-		  <p><strong>Sizes:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
+		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
+		  <p><strong>{{ i18n "sizes" }}:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
 		  <p class="price py-4">{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
 		  {{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
 		  </p>

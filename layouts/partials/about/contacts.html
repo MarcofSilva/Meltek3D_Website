@@ -1,11 +1,7 @@
-{{ define "main" }}
-
-<!--TODO About section-->
-
+{{ with .Params.contacts }}
 <section id="contacts_section" class="section">
   <div class="container">
     <div class="row justify-content-center">
-      {{ with .Params.contacts }}
       <div class="col-lg-5 col-sm-6 mb-5">
         <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
@@ -24,9 +20,8 @@
           {{ end }}
         </ul>
       </div>
-      {{ end }}
       <div class="col-lg-3 col-sm-6 mb-5">
-        {{ with .Params.opennig_hour }}
+        {{ with .opennig_hour }}
         <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
         <ul class="list-unstyled">
           {{ range .day_time }}
@@ -38,7 +33,7 @@
     </div>
     
     <!--Form-->
-    {{ if .Params.enable_form }}}}
+    {{ if .enable_form }}
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <h2 class="font-weight-bold mb-4">{{ .Title | markdownify }}</h2>
@@ -61,5 +56,4 @@
     {{ end }}
   </div>
 </section>
-
 {{ end }}

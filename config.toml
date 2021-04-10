@@ -24,7 +24,7 @@ title = "Meltek3D"
     #name = "Blog"
     #weight = 1
 [[Languages.en.menu.footer]]
-    URL = "contact/#contacts_section"
+    URL = "about/#contacts_section"
     name = "Contact"
     weight = 2
 [[Languages.en.menu.footer]]
@@ -48,11 +48,11 @@ title = "Meltek3D"
     #name = "Blog"
     #weight = 3
 [[Languages.en.menu.main]]
-    URL = "contact"
+    URL = "about"
     name = "About Us"
     weight = 4
 [[Languages.en.menu.main]]
-    URL = "contact/#contacts_section"
+    URL = "about/#contacts_section"
     name = "Contact"
     weight = 5
 
@@ -68,7 +68,7 @@ title = "Meltek3D"
     #name = "Blog"
     #weight = 1
 [[Languages.pt.menu.footer]]
-    URL = "contact/#contacts_section"
+    URL = "about/#contacts_section"
     name = "Contactos"
     weight = 2
 [[Languages.pt.menu.footer]]
@@ -92,11 +92,11 @@ title = "Meltek3D"
     #name = "Blog"
     #weight = 3
 [[Languages.pt.menu.main]]
-    URL = "contact"
+    URL = "about"
     name = "Quem Somos"
     weight = 4
 [[Languages.pt.menu.main]]
-    URL = "contact/#contacts_section"
+    URL = "about/#contacts_section"
     name = "Contactos"
     weight = 5
 

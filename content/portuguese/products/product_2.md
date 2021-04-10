@@ -1,6 +1,6 @@
 ---
 title : "Caixa/suporte para 3 cápsulas"
-date  : 2021-02-24T22:32:39Z
+date  : 2021-02-24T22:33:40Z
 # meta description
 description : "this is meta description"
 
@@ -23,7 +23,7 @@ banner:
    label : "Ver todos os Produtos"
    link  : "products"
 
-############################# gallery ############################
+############################# allery Info ############################
 gallery_buy:
   enable: true
   title: ""
@@ -32,8 +32,9 @@ gallery_buy:
   discount_price: "4.50"
 
   # product variation
-  colors: ["azul","vermelho","cinzento"]
-  sizes : ["3","6"]
+  colors: ["Azul","Vermelho","Branco"]
+  sizes : [3, 6]
+  size : 3
   
   description: Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
 
@@ -102,6 +103,10 @@ testimonials:
       image      : "images/avater.png"
       content    : "Lindo, mesmo."
 
+############################## Other Products ##########################
+other_products:
+  enable: true
+  title: Veja outros produtos
 
 draft: false
 ---

@@ -19,7 +19,7 @@
             <!--<li class="list-inline-item">
               <a href="https://www.facebook.com"><img class="mr-2" src="{{ site.Params.facebook_icon | absURL }}" width="30px"></i></a> #FIXME upgrade this hardcoded icon
             </li>-->
-            {{range first 1 (where site.Pages "Section" "contact") }}
+            {{range first 1 (where site.Pages "Section" "about") }}
             {{ with .Params.contacts }}
             <li class="list-inline-item"><i class="tf-ion-ios-telephone"></i><a href="tel:{{ .mobile }}">{{ .mobile }}</a></li>
             <li class="list-inline-item"><i class="tf-ion-email"></i><a href="mailto:{{ .email }}">{{ .email }}</a></li>
