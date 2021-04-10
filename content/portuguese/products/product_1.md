@@ -1,8 +1,10 @@
 ---
-title : "Caixa/suporte para cápsulas"
+title : "Caixa/suporte para 6 cápsulas"
 date  : 2021-02-24T22:32:39Z
 # meta description
 description : "this is meta description"
+
+weight: 1
 
 images: 
 - "images/products/capsules_6_blue.png"
@@ -26,12 +28,12 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "40.00"
-  discount_price: "25.00"
+  price         : "6.00"
+  discount_price: "5.50"
 
   # product variation
   colors: ["azul","vermelho","cinzento"]
-  sizes : ["3","6","12"]
+  sizes : ["3","6"]
   
   description: Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
 

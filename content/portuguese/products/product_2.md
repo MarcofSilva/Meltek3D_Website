@@ -1,8 +1,10 @@
 ---
-title : "Caixa/suporte para cápsulas"
+title : "Caixa/suporte para 3 cápsulas"
 date  : 2021-02-24T22:32:39Z
 # meta description
 description : "this is meta description"
+
+weight: 2
 
 images: 
 - "images/products/capsules_3_red.png"
@@ -26,8 +28,8 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "40.00"
-  discount_price: "25.00"
+  price         : "5.00"
+  discount_price: "4.50"
 
   # product variation
   colors: ["azul","vermelho","cinzento"]

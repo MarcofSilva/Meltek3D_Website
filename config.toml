@@ -1,6 +1,5 @@
 ################################### Default Configuration ############################
 baseURL = "https://marcofsilva.github.io/Meltek3D_Website/" #FIXME
-relativeURLs = "true"
 disableKinds = ["taxonomy", "term"]
 defaultContentLanguage = "pt"
 disableLanguages = ["en"]   #XXX
@@ -21,39 +20,39 @@ title = "Meltek3D"
     languageName = "En"
     weight = 1
 #[[Languages.en.menu.footer]]
-    #URL = "/blog"
+    #URL = "blog"
     #name = "Blog"
     #weight = 1
 [[Languages.en.menu.footer]]
-    URL = "/contact/#contacts_section"
+    URL = "contact/#contacts_section"
     name = "Contact"
     weight = 2
 [[Languages.en.menu.footer]]
-    URL = "/terms-conditions"
+    URL = "terms-conditions"
     name = "Terms & Conditions"
     weight = 3
 [[Languages.en.menu.footer]]
-    URL = "/privacy-policy"
+    URL = "privacy-policy"
     name = "Privacy Policy"
     weight = 4
 [[Languages.en.menu.main]]
-    URL = "/"
+    URL = ""
     name = "Home"
     weight = 1
 [[Languages.en.menu.main]]
-    URL = "/products"
+    URL = "products"
     name = "Products"
     weight = 2
 #[[Languages.en.menu.main]]
-    #URL = "/blog"
+    #URL = "blog"
     #name = "Blog"
     #weight = 3
 [[Languages.en.menu.main]]
-    URL = "/contact"
+    URL = "contact"
     name = "About Us"
     weight = 4
 [[Languages.en.menu.main]]
-    URL = "/contact/#contacts_section"
+    URL = "contact/#contacts_section"
     name = "Contact"
     weight = 5
 
@@ -65,39 +64,39 @@ title = "Meltek3D"
     languageName = "Pt"
     weight = 2
 #[[Languages.pt.menu.footer]]
-    #URL = "/blog"
+    #URL = "blog"
     #name = "Blog"
     #weight = 1
 [[Languages.pt.menu.footer]]
-    URL = "/contact/#contacts_section"
+    URL = "contact/#contacts_section"
     name = "Contactos"
     weight = 2
 [[Languages.pt.menu.footer]]
-    URL = "/terms-conditions"
+    URL = "terms-conditions"
     name = "Termos & Condições"
     weight = 3
 [[Languages.pt.menu.footer]]
-    URL = "/privacy-policy"
+    URL = "privacy-policy"
     name = "Política de Privacidade"
     weight = 4
 [[Languages.pt.menu.main]]
-    URL = "/"
+    URL = ""
     name = "Página Inicial"
     weight = 1
 [[Languages.pt.menu.main]]
-    URL = "/products"
+    URL = "products"
     name = "Produtos"
     weight = 2
 #[[Languages.pt.menu.main]]
-    #URL = "/blog"
+    #URL = "blog"
     #name = "Blog"
     #weight = 3
 [[Languages.pt.menu.main]]
-    URL = "/contact"
+    URL = "contact"
     name = "Quem Somos"
     weight = 4
 [[Languages.pt.menu.main]]
-    URL = "/contact/#contacts_section"
+    URL = "contact/#contacts_section"
     name = "Contactos"
     weight = 5
 
@@ -111,8 +110,8 @@ link = "plugins/bootstrap/bootstrap.min.css"
 link = "plugins/themefisher-font/themefisher-font.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.min.css"
-[[params.plugins.css]]
-link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+#[[params.plugins.css]]
+#link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
 [[params.plugins.css]]
 link = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 [[params.plugins.css]]
@@ -125,8 +124,8 @@ link = "plugins/jquery/jquery.js"
 link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
-[[params.plugins.js]]
-link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+#[[params.plugins.js]]
+#link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
 [[params.plugins.js]]
 link = "https://unpkg.com/aos@2.3.1/dist/aos.js"
 

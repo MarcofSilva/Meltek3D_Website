@@ -2,8 +2,11 @@
 
 <section class="section">
 	<div class="container">
+		<div class="heading">
+			<h2>{{ .Params.title | markdownify }}</h2>
+		</div>
 	  <div class="row">
-		<div class="col-md-5 mb-4 mb-md-0">
+		<div class="col-md-6 mb-4 mb-md-0">
 		  <!-- product image slider -->
 		  <div class="product-image-slider">
 			{{ range .Params.images }}
@@ -13,7 +16,7 @@
 			{{ end }}
 		  </div>
 		</div>
-		<div class="col-lg-6 col-md-7 offset-lg-1">
+		<div class="col-lg-5 col-md-6 offset-lg-1">
 		  <h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>
 		  <p><strong>Colors:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
 		  <p><strong>Sizes:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
