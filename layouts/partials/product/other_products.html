@@ -1,4 +1,4 @@
-{{ if .Params.other_products.enable }}
+  {{ if .Params.other_products.enable }}
 {{ $dateId := .Params.date }}
 <section class="section gallery" id="products">
   <div class="container">
@@ -10,16 +10,16 @@
 
         <div class="product-slider">
           {{ range (where .Site.RegularPages "Section" "products") }}
-          {{ if ne .Params.date $dateId }}
-          <div class="block">
-            <div class="gallery-overlay">
-              <a href="{{ .Permalink }}" class="gallery-popup">
-                <i class="tf-ion-android-open"></i>
-              </a>
+            {{ if ne .Params.date $dateId }}
+            <div class="block">
+              <div class="gallery-overlay">
+                <a href="{{ .Permalink }}" class="gallery-popup">
+                  <i class="tf-ion-android-open"></i>
+                </a>
+              </div>
+              <img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
             </div>
-            <img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
-          </div>
-          {{ end }}
+            {{ end }}
           {{ end }}
         </div>
       </div>
