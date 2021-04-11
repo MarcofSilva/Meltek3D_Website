@@ -1,5 +1,5 @@
 ---
-title : "Caixa/suporte para 6 cápsulas"
+title : "Caixa 6 cápsulas"
 date  : 2021-02-24T22:32:39Z
 # meta description
 description : "this is meta description"
@@ -41,7 +41,7 @@ gallery_buy:
 ############################# Feature ############################
 features:
   enable: true
-  title : "Principais Características / O que o torna único? (Porque?)"
+  #title : "" # Write in here will override the title defined for all products
   items :
     # about product item loop
     - image  : "images/showcase/showcase-1.jpeg"
@@ -106,7 +106,7 @@ testimonials:
 ############################## Other Products ##########################
 other_products:
   enable: true
-  title: Veja outros produtos
+  #title and common variables are in data/product.yml but can be overriden here (by product)
 
 draft: false
 ---

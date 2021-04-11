@@ -15,11 +15,9 @@ $(window).scroll(function() {
   }
 });
 
-
 (function ($) {
   'use strict';
 
-  
   // product Slider
   $('.product-image-slider').slick({
     autoplay: false,

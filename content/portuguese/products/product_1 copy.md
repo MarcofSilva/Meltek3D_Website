@@ -1,14 +1,14 @@
 ---
-title : "Caixa 3 cápsulas"
-date  : 2021-02-24T22:33:40Z
+title : "Caixa 6 cápsulas"
+date  : 2021-02-24T22:32:38Z
 # meta description
 description : "this is meta description"
 
-weight: 2
+weight: 1
 
 images: 
-- "images/products/capsules_3_red.png"
-- "images/products/capsules_3_blue.png"
+- "images/products/capsules_6_blue.png"
+- "images/products/capsules_6_red.png"
 
 #XXX when creating product, give this files a name considering that it will be shown in the url
 
@@ -23,18 +23,18 @@ banner:
    label : "Ver todos os Produtos"
    link  : "products"
 
-############################# allery Info ############################
+############################# Gallery Info ############################
 gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "5.00"
-  discount_price: "4.50"
+  price         : "6.00"
+  discount_price: "5.50"
 
   # product variation
   colors: ["Azul","Vermelho","Branco"]
   sizes : [3, 6]
-  size : 3
+  size : 6
   
   description: Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
 

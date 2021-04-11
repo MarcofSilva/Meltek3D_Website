@@ -17,12 +17,13 @@
 		  </div>
 		</div>
 		<div class="col-lg-5 col-md-6 offset-lg-1">
-		  <h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>
+		  <!--<h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>-->
 		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
 		  <p><strong>{{ i18n "sizes" }}:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
 		  <p class="price py-4">{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
 		  {{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
 		  </p>
+		  {{ if .Site.Params.enable_cart }}
 		  <button class="snipcart-add-item btn btn-main mb-5" 
 			data-item-id="{{.Params.gallery_buy.Title | urlize}}__{{if .Params.gallery_buy.discount_price}}{{.Params.gallery_buy.discount_price}}{{else}}{{.Params.gallery_buy.price}}{{end}}"
 			data-item-name="{{.Params.gallery_buy.Title}}"
@@ -37,9 +38,57 @@
 			data-item-custom2-options="{{range $index, $element:= .Params.gallery_buy.sizes}}{{if eq $index 0}}{{. | title}}{{else}}|{{. | title}}{{end}}{{end}}"
 			{{end}}>{{i18n "add_to_cart"}}
 		  </button>
+		  {{ else }}
+		  	<!-- Botão para acionar modal -->
+		  	<button type="button" class="btn btn-main mb-5" data-toggle="modal" data-target="#buyContactUs">
+			  Encomendar <!--TODO text martelado-->
+		  	</button>
+		  {{ end }}
 		  <div class="content">{{.Params.gallery_buy.Content}}</div>
 		</div>
 	  </div>
+
+	  <!-- Modal -->
+  <!--TODO Content management (texto martelado)-->
+  <div class="modal fade" id="buyContactUs" tabindex="-1" role="dialog" aria-labelledby="modalTitleCenter" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h3 class="modal-title" id="modalTitleCenter">Contacte-nos e faça a sua encomenda</h3>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <p>Se tem interesse, contacte-nos e encomende já!</p>
+		  <p>Estamos disponíveis de <strong>segunda</strong> a <strong>sábado</strong> entre <strong>9h-19h</strong>.</p>
+		  <br>
+		  <p style="font-weight: 400;">Outros produtos em que poderá ter interesse:</p>
+		  <!--<a href="#" class="btn btn-main">yup</a>-->
+		  <div class="product-slider" style="">
+			{{ $dateId := .Params.date }}
+			{{ range (where .Site.RegularPages "Section" "products") }}
+			  {{ if ne .Params.date $dateId }}
+			  <div class="block">
+				<div class="gallery-overlay">
+				  <a href="{{ .Permalink }}" class="gallery-popup">
+					<i class="tf-ion-android-open"></i>
+				  </a>
+				</div>
+				<img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
+			  </div>
+			  {{ end }}
+			{{ end }}
+		  </div>
+		  
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-main">meltek3d@gmail.com</button>
+			<button type="button" class="btn btn-main">93xxxxxxx</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 	</div>
   </section>
 
