@@ -2,8 +2,21 @@
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
+<style>
+  .feature-description {
+    font-size:x-large;
+  }
+  .feature-image {
+    border-radius: 5px;
+    box-shadow: 4px 8px 10px 0px #7a7a7a75;
+  }
+  .background-gray {
+    background-color: #f4f4f4;
+  }
+</style>
+
 {{ with .Params.features }}
-<section class="feature-list section">
+<section class="feature-list section background-gray">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -12,30 +25,13 @@
         </div>
       </div>
     </div>
-    {{ range $index, $element := .items }}
-    {{- if ne (mod $index 2) 1 }}
-    <div class="row mb-40">
-      <div class="col-md-6 text-center mb-5 mb-lg-0">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
-      </div>
-      <div class="col-md-6 align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
-          {{ if .button.enable }}
-            {{ with .button }}
-            <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
-            {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    {{- else }}
+
+    {{ with .first_item}}
     <div class="row mb-40">
       <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
         <div class="content">
           <h4 class="subheading">{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
+          <p class="feature-description">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
           <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
@@ -44,11 +40,54 @@
         </div>
       </div>
       <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+        <img class="img-fluid feature-image mb-4" src="{{ .image1 | absURL }}" alt="">
+        <img class="img-fluid feature-image" src="{{ .image2 | absURL }}" alt="">
       </div>
     </div>
+    <hr>
+    {{ end }}
+    {{ range $index, $element := .items }}
+    {{- if ne (mod $index 2) 1 }}
+    <br>
+    <div class="row mb-40">
+      <div class="col-md-6 text-center mb-5 mb-lg-0">
+        <img class="img-fluid feature-image" src="{{ .image | absURL }}" alt="">
+      </div>
+      <div class="col-md-6 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .title | markdownify }}</h4>
+          <p class="feature-description">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+            {{ with .button }}
+            <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <hr>
+    {{- else }}
+    <br>
+    <div class="row mb-40">
+      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .title | markdownify }}</h4>
+          <p class="feature-description">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
+        <img class="img-fluid feature-image" src="{{ .image | absURL }}" alt="">
+      </div>
+    </div>
+    <hr>
     {{ end }}
     {{ end }}
+    
   </div>
 </section>
 {{ end }}

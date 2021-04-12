@@ -23,7 +23,7 @@ banner:
    label : "Ver todos os Produtos"
    link  : "products"
 
-############################# allery Info ############################
+############################# Gallery Info ############################
 gallery_buy:
   enable: true
   title: ""
@@ -42,18 +42,19 @@ gallery_buy:
 features:
   enable: true
   #title : "" # Write in here will override the title defined for all products
-  items :
+  first_item:
     # about product item loop
-    - image  : "images/showcase/showcase-1.jpeg"
-      title  : "Menos Esforço"
-      content: "Prepare as suas cápsulas com menos esforço, fixando cada uma delas numa das cavidades em vez de a segurar com a mão."
-      button:
-        enable: false
-        label : "Check Features"
-        link  : "#"
-        
+    image1  : "images/products/feature1_1.png"
+    image2  : "images/products/feature1_2.png"
+    title  : "Menos Esforço"
+    content: "Prepare as suas cápsulas com menos esforço, fixando cada uma delas numa das cavidades em vez de a segurar com a mão."
+    button:
+      enable: false
+      label : "Check Features"
+      link  : "#"
+  items :        
     # about product item loop
-    - image  : "images/showcase/showcase-2.jpeg"
+    - image  : "images/products/feature2.png"
       title  : "Ajude o Ambiente"
       content: "Recorremos a um material biodegradável para a produção, reduzindo o impacto negativo no ambiente."
       button:
@@ -62,7 +63,7 @@ features:
         link  : "#"
 
     # about product item loop
-    - image  : "images/showcase/showcase-3.jpeg"
+    - image  : "images/products/feature3.png"
       title  : "Poupe Tempo"
       content: "5x mais rápido prepara múltiplas cápsulas."
       button:
@@ -71,7 +72,7 @@ features:
         link  : "#"
         
     # about product item loop
-    - image  : "images/showcase/showcase-1.jpeg"
+    - image  : "images/products/feature4_1.png"
       title  : "Armazenamento e transporte"
       content: "Guarde várias cápsulas de forma segura, nesta nossa caixa desenhada à medida."
       button:

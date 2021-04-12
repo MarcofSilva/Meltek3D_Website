@@ -50,8 +50,8 @@
 
 	  <!-- Modal -->
   <!--TODO Content management (texto martelado)-->
-  <div class="modal fade" id="buyContactUs" tabindex="-1" role="dialog" aria-labelledby="modalTitleCenter" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal modal-slick fade" id="buyContactUs" tabindex="-1" role="dialog" aria-labelledby="modalTitleCenter" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 	  <div class="modal-content">
 		<div class="modal-header">
 		  <h3 class="modal-title" id="modalTitleCenter">Contacte-nos e faça a sua encomenda</h3>
@@ -60,26 +60,28 @@
 		  </button>
 		</div>
 		<div class="modal-body">
-		  <p>Se tem interesse, contacte-nos e encomende já!</p>
+		  
 		  <p>Estamos disponíveis de <strong>segunda</strong> a <strong>sábado</strong> entre <strong>9h-19h</strong>.</p>
 		  <br>
 		  <p style="font-weight: 400;">Outros produtos em que poderá ter interesse:</p>
 		  <!--<a href="#" class="btn btn-main">yup</a>-->
-		  <div class="product-slider" style="">
-			{{ $dateId := .Params.date }}
-			{{ range (where .Site.RegularPages "Section" "products") }}
-			  {{ if ne .Params.date $dateId }}
-			  <div class="block">
-				<div class="gallery-overlay">
-				  <a href="{{ .Permalink }}" class="gallery-popup">
-					<i class="tf-ion-android-open"></i>
-				  </a>
+		  <div class="wrap-modal-slider">
+			<div class="product-slider">
+				{{ $dateId := .Params.date }}
+				{{ range (where .Site.RegularPages "Section" "products") }}
+				{{ if ne .Params.date $dateId }}
+				<div class="block">
+					<div class="gallery-overlay">
+					<a href="{{ .Permalink }}" class="gallery-popup">
+						<i class="tf-ion-android-open"></i>
+					</a>
+					</div>
+					<img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
 				</div>
-				<img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
-			  </div>
-			  {{ end }}
-			{{ end }}
-		  </div>
+				{{ end }}
+				{{ end }}
+			</div>
+		</div>
 		  
 		</div>
 		<div class="modal-footer">
