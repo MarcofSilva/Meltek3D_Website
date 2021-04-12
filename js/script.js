@@ -76,6 +76,10 @@ $(window).scroll(function() {
     ]
   });
 
+  $('.modal-slick').on('shown.bs.modal', function (e) {
+    $('.product-slider').slick('setPosition');
+  });
+
   /*#TODO
   $('.homepage-slider').slick()({
     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
