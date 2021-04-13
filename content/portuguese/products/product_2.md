@@ -28,15 +28,18 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "5.00"
-  discount_price: "4.50"
+  price         : "4.50"
+  discount_price: "4.00"
 
   # product variation
   colors: ["Azul","Vermelho","Branco"]
   sizes : [3, 6]
   size : 3
   
-  description: Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
+  info:
+    - Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
+    - "Dimensões: 6x6x6"
+    - "Material: PLA"
 
 ############################# Feature ############################
 features:

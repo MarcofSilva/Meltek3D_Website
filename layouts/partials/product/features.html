@@ -27,8 +27,8 @@
     </div>
 
     {{ with .first_item}}
-    <div class="row mb-40">
-      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+    <div class="mb-40" data-aos="fade-zoom-in">
+      <div class="align-self-center text-center text-md-left">
         <div class="content">
           <h4 class="subheading">{{ .title | markdownify }}</h4>
           <p class="feature-description">{{ .content | markdownify }}</p>
@@ -39,21 +39,22 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
-        <img class="img-fluid feature-image mb-4" src="{{ .image1 | absURL }}" alt="">
-        <img class="img-fluid feature-image" src="{{ .image2 | absURL }}" alt="">
+      <div class="row text-center mb-lg-0">
+        <div class="col-md-6 mb-lg-0 mb-4"><img class="img-fluid feature-image" src="{{ .image1 | absURL }}" alt=""></div>
+        <div class="col-md-6 mb-lg-0"><img class="img-fluid feature-image" src="{{ .image2 | absURL }}" alt=""></div>
       </div>
     </div>
-    <hr>
+    
     {{ end }}
     {{ range $index, $element := .items }}
     {{- if ne (mod $index 2) 1 }}
+    <hr>
     <br>
-    <div class="row mb-40">
-      <div class="col-md-6 text-center mb-5 mb-lg-0">
+    <div class="row mb-40" data-aos="fade-zoom-in">
+      <div class="col-md-6 order-md-1 order-2 text-center mb-lg-0">
         <img class="img-fluid feature-image" src="{{ .image | absURL }}" alt="">
       </div>
-      <div class="col-md-6 align-self-center text-center text-md-left">
+      <div class="col-md-6  order-md-2 order-1 align-self-center text-center text-md-left">
         <div class="content">
           <h4 class="subheading">{{ .title | markdownify }}</h4>
           <p class="feature-description">{{ .content | markdownify }}</p>
@@ -65,11 +66,12 @@
         </div>
       </div>
     </div>
-    <hr>
+    
     {{- else }}
+    <hr>
     <br>
-    <div class="row mb-40">
-      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+    <div class="row mb-40" data-aos="fade-zoom-in">
+      <div class="col-md-6 align-self-center text-center text-md-left">
         <div class="content">
           <h4 class="subheading">{{ .title | markdownify }}</h4>
           <p class="feature-description">{{ .content | markdownify }}</p>
@@ -80,11 +82,11 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
+      <div class="col-md-6 text-center mb-lg-0">
         <img class="img-fluid feature-image" src="{{ .image | absURL }}" alt="">
       </div>
     </div>
-    <hr>
+    
     {{ end }}
     {{ end }}
     

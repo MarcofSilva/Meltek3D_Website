@@ -36,7 +36,10 @@ gallery_buy:
   sizes : [3, 6]
   size : 6
   
-  description: Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
+  info:
+    - Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
+    - "Dimensões: 12x12x12"
+    - "Material: PLA"
 
 ############################# Feature ############################
 features:

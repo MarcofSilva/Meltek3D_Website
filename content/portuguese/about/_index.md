@@ -7,7 +7,7 @@ about:
 
 contacts:
   title : "Contactos"
-  mobile : "93xxxxxxx"
+  mobile : "932812112"
   email : "meltek3d@gmail.com" #FIXME
   location : "Algarve, Portugal" #TODO Review Algarve?
   content : 

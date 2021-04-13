@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="heading">
+        <div class="heading mt-4" style="padding-bottom:0">
           <h2>{{ cond (isset .Params.other_products "title") .Params.other_products.title $data.product.other_products.title | markdownify }}</h2>
         </div>
 
