@@ -1,0 +1,25 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.promo.enable }}
+
+<style>
+  .round-corners {
+    border-radius: 10px;
+  }
+</style>
+
+{{ with $data.homepage.promo }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <picture class="img-fluid round-corners">
+        <source 
+           media="(max-width: 767px)"
+           srcset="{{ .imageSmall | absURL }}">
+        <img class="img-fluid round-corners" src="{{ .image | absURL }}" alt="promo">
+     </picture>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

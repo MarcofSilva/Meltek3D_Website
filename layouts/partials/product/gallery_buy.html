@@ -21,8 +21,14 @@
 		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
 		  <p><strong>{{ i18n "sizes" }}:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
 		  <p class="price py-4">
-			{{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
-			{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
+			{{if .Params.gallery_buy.discount_price}}
+				<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
+			{{end}}
+			{{if .Params.gallery_buy.discount_price}}
+				{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
+			{{else}}
+				{{site.Params.currency}}{{.Params.gallery_buy.price}}
+			{{end}}
 		  </p>
 		  {{ if .Site.Params.enable_cart }}
 		  <button class="snipcart-add-item btn btn-main mb-5" 
@@ -42,7 +48,7 @@
 		  {{ else }}
 		  	<!-- Botão para acionar modal -->
 		  	<button type="button" class="btn btn-main mb-5" data-toggle="modal" data-target="#buyContactUs">
-			  Encomendar <!--TODO text martelado-->
+			  Comprar <!--TODO text martelado-->
 		  	</button>
 		  {{ end }}
 		  	<div class="content">

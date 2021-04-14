@@ -488,8 +488,12 @@ s.price {
 .product-info {
   text-align: center;
 
-  .price {
-    font-size: 100%;
+  p.price {
+    font-size: 130%;
+  }
+
+  s.price {
+    font-size: 80%;
   }
 }
 

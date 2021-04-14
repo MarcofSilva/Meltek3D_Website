@@ -1,5 +1,5 @@
 ---
-title : "Caixa 3 cápsulas"
+title : "Caixa para 3 cápsulas"
 date  : 2021-02-24T22:33:40Z
 # meta description
 description : "this is meta description"
@@ -9,6 +9,7 @@ weight: 2
 images: 
 - "images/products/capsules_3_red.png"
 - "images/products/capsules_3_blue.png"
+- "images/products/capsules_3_white.png"
 
 #XXX when creating product, give this files a name considering that it will be shown in the url
 
@@ -37,8 +38,9 @@ gallery_buy:
   size : 3
   
   info:
-    - Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
-    - "Dimensões: 6x6x6"
+    - "Utilize esta caixa para preparar as suas cápsulas de forma fácil e rápida.
+      Pode ainda armazenar e transportar as mesmas de forma segura e prática."
+    - "Dimensões: 64x25x26mm"
     - "Material: PLA"
 
 ############################# Feature ############################

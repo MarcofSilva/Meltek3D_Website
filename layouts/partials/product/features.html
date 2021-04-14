@@ -3,15 +3,40 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 <style>
+  .feature-content {
+    padding: 10px;
+  }
   .feature-description {
     font-size:x-large;
   }
-  .feature-image {
-    border-radius: 5px;
-    box-shadow: 4px 8px 10px 0px #7a7a7a75;
+  .feature-image-left, .feature-image-right {
+    border-radius: 0px 0px 15px 15px;
+    padding: 0px;
+  }
+  .feature-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 5px #bbbbbb75;
   }
   .background-gray {
     background-color: #f4f4f4;
+  }
+  .bullet-arrow {
+    margin-bottom: 10px;
+  }
+  .nopadding {
+    padding: 0px;
+  }
+
+  @media (min-width: 768px) {
+    .feature-image-left {
+      border-radius: 15px 0px 0px 15px;
+      padding: 0px;
+    }
+    .feature-image-right {
+      border-radius: 0px 15px 15px 0px;
+      padding: 0px;
+    }
   }
 </style>
 
@@ -27,10 +52,15 @@
     </div>
 
     {{ with .first_item}}
-    <div class="mb-40" data-aos="fade-zoom-in">
+    <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
       <div class="align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
+        <div class="content feature-content">
+          <h4 class="subheading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            {{ .title | markdownify }}
+          </h4>
           <p class="feature-description">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -48,15 +78,19 @@
     {{ end }}
     {{ range $index, $element := .items }}
     {{- if ne (mod $index 2) 1 }}
-    <hr>
     <br>
-    <div class="row mb-40" data-aos="fade-zoom-in">
-      <div class="col-md-6 order-md-1 order-2 text-center mb-lg-0">
-        <img class="img-fluid feature-image" src="{{ .image | absURL }}" alt="">
+    <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
+      <div class="col-md-6 nopadding order-md-1 order-2 text-center mb-lg-0">
+        <img class="img-fluid feature-image-left" src="{{ .image | absURL }}" alt="">
       </div>
-      <div class="col-md-6  order-md-2 order-1 align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
+      <div class="col-md-6 nopadding order-md-2 order-1 align-self-center text-center text-md-left">
+        <div class="content feature-content">
+          <h4 class="subheading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            {{ .title | markdownify }}
+          </h4>
           <p class="feature-description">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
             {{ with .button }}
@@ -68,12 +102,16 @@
     </div>
     
     {{- else }}
-    <hr>
     <br>
-    <div class="row mb-40" data-aos="fade-zoom-in">
-      <div class="col-md-6 align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
+    <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
+      <div class="col-md-6 nopadding align-self-center text-center text-md-left">
+        <div class="content feature-content">
+          <h4 class="subheading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            {{ .title | markdownify }}
+          </h4>
           <p class="feature-description">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -82,8 +120,8 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 text-center mb-lg-0">
-        <img class="img-fluid feature-image" src="{{ .image | absURL }}" alt="">
+      <div class="col-md-6 nopadding text-center mb-lg-0">
+        <img class="img-fluid feature-image-right" src="{{ .image | absURL }}" alt="">
       </div>
     </div>
     

@@ -1,5 +1,5 @@
 ---
-title : "Caixa 6 cápsulas"
+title : "Caixa para 6 cápsulas"
 date  : 2021-02-24T22:32:39Z
 # meta description
 description : "this is meta description"
@@ -9,6 +9,8 @@ weight: 1
 images: 
 - "images/products/capsules_6_blue.png"
 - "images/products/capsules_6_red.png"
+- "images/products/capsules_6_white.png"
+- "images/products/capsules_6_closed_white.png"
 
 #XXX when creating product, give this files a name considering that it will be shown in the url
 
@@ -37,9 +39,11 @@ gallery_buy:
   size : 6
   
   info:
-    - Faça as suas cápsulas de forma rápida e limpa. Consiga ainda armazenar as cápsulas dps de fechadas com esta caixa que inclui uma tampa para facilitar o transporte e armazenamento.
-    - "Dimensões: 12x12x12"
-    - "Material: PLA"
+    - "Utilize esta caixa para preparar as suas cápsulas de forma fácil e rápida.
+      Pode ainda armazenar e transportar as mesmas de forma segura e prática."
+    - "Material: PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
+    - "Dimensões: 64x44x26mm."
+
 
 ############################# Feature ############################
 features:
