@@ -1,5 +1,5 @@
 ################################### Default Configuration ############################
-baseURL = "https://marcofsilva.github.io/Meltek3D_Website/" #FIXME
+baseURL = "https://meltek3d.com/"
 disableKinds = ["taxonomy", "term"]
 defaultContentLanguage = "pt"
 disableLanguages = ["en"]   #XXX
