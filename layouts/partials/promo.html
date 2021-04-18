@@ -2,17 +2,11 @@
 
 {{ if $data.homepage.promo.enable }}
 
-<style>
-  .round-corners {
-    border-radius: 10px;
-  }
-</style>
-
 {{ with $data.homepage.promo }}
-<section class="section">
+<section class="section" style="padding-top: 20px; padding-bottom: 0px">
   <div class="container">
-    <div class="row">
-      <picture class="img-fluid round-corners">
+    <div class="row" onclick="location.href=''" style="cursor: pointer;">
+      <picture class="img-fluid">
         <source 
            media="(max-width: 767px)"
            srcset="{{ .imageSmall | absURL }}">

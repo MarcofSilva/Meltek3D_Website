@@ -20,16 +20,19 @@
 		  <!--<h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>-->
 		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
 		  <p><strong>{{ i18n "sizes" }}:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
-		  <p class="price py-4">
-			{{if .Params.gallery_buy.discount_price}}
-				<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
-			{{end}}
-			{{if .Params.gallery_buy.discount_price}}
-				{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
-			{{else}}
-				{{site.Params.currency}}{{.Params.gallery_buy.price}}
-			{{end}}
-		  </p>
+		  <div class="py-4">
+			<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço de lançamento:</p>
+			<p class="price">
+				{{if .Params.gallery_buy.discount_price}}
+					<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
+				{{end}}
+				{{if .Params.gallery_buy.discount_price}}
+					{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
+				{{else}}
+					{{site.Params.currency}}{{.Params.gallery_buy.price}}
+				{{end}}
+			</p>
+		  </div>
 		  {{ if .Site.Params.enable_cart }}
 		  <button class="snipcart-add-item btn btn-main mb-5" 
 			data-item-id="{{.Params.gallery_buy.Title | urlize}}__{{if .Params.gallery_buy.discount_price}}{{.Params.gallery_buy.discount_price}}{{else}}{{.Params.gallery_buy.price}}{{end}}"
@@ -48,7 +51,7 @@
 		  {{ else }}
 		  	<!-- Botão para acionar modal -->
 		  	<button type="button" class="btn btn-main mb-5" data-toggle="modal" data-target="#buyContactUs">
-			  Comprar <!--TODO text martelado-->
+			  Encomendar <!--TODO text martelado-->
 		  	</button>
 		  {{ end }}
 		  	<div class="content">
@@ -70,16 +73,21 @@
 	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 	  <div class="modal-content">
 		<div class="modal-header">
-		  <h3 class="modal-title" id="modalTitleCenter">Contacte-nos e faça a sua encomenda</h3>
+		  <h3 class="modal-title" id="modalTitleCenter">Para encomendar <strong>{{ .Params.title }}</strong> contacte-nos:</h3>
 		  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 			<span aria-hidden="true">&times;</span>
 		  </button>
 		</div>
 		<div class="modal-body">
 		  
-		  <p>Estamos disponíveis de <strong>segunda</strong> a <strong>sábado</strong> entre <strong>9h-19h</strong>.</p>
+		  <p>Estamos disponíveis de <strong>segunda</strong> a <strong>sábado</strong> entre <strong>9h-19h</strong></p>
+		  <ul class="list-unstyled contact-list">
+			<li class="mb-3"><i class="tf-ion-ios-telephone mr-2"></i><a href="tel:+351932812112"><strong>+351 932812112</strong></a></li>
+			<li class="mb-3"><i class="tf-ion-email mr-2"></i><a href="mailto:meltek3d@gmail.com"><strong>meltek3d@gmail.com</strong></a></li>
+		  </ul>
+		  <hr>
 		  <br>
-		  <p style="font-weight: 400;">Outros produtos em que poderá ter interesse:</p>
+		  <p style="font-weight: 400;">Outros produtos em que também poderá ter interesse:</p>
 		  <!--<a href="#" class="btn btn-main">yup</a>-->
 		  <div class="wrap-modal-slider">
 			<div class="product-slider">
@@ -100,10 +108,6 @@
 			</div>
 		</div>
 		  
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-main">meltek3d@gmail.com</button>
-			<button type="button" class="btn btn-main">93xxxxxxx</button>
 		</div>
 	  </div>
 	</div>

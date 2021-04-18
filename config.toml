@@ -47,10 +47,10 @@ title = "Meltek3D"
     #URL = "blog"
     #name = "Blog"
     #weight = 3
-[[Languages.en.menu.main]]
-    URL = "about"
-    name = "About Us"
-    weight = 4
+#[[Languages.en.menu.main]]
+#    URL = "about"
+#    name = "About Us"
+#    weight = 4
 [[Languages.en.menu.main]]
     URL = "about/#contacts_section"
     name = "Contact"
@@ -91,10 +91,10 @@ title = "Meltek3D"
     #URL = "blog"
     #name = "Blog"
     #weight = 3
-[[Languages.pt.menu.main]]
-    URL = "about"
-    name = "Quem Somos"
-    weight = 4
+#[[Languages.pt.menu.main]]
+#    URL = "about"
+#    name = "Quem Somos"
+#    weight = 4
 [[Languages.pt.menu.main]]
     URL = "about/#contacts_section"
     name = "Contactos"

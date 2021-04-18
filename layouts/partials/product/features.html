@@ -5,6 +5,7 @@
 <style>
   .feature-content {
     padding: 10px;
+    padding-top: 15px;
   }
   .feature-description {
     font-size:x-large;
@@ -12,6 +13,11 @@
   .feature-image-left, .feature-image-right {
     border-radius: 0px 0px 15px 15px;
     padding: 0px;
+    position: relative;
+    z-index: -2;
+  }
+  .feature-image-div-left, .feature-image-div-right {
+    border-radius: 0px 0px 15px 15px;
   }
   .feature-card {
     background-color: white;
@@ -28,6 +34,11 @@
     padding: 0px;
   }
 
+  .inner-shadow-div-left, .inner-shadow-div-right {
+    box-shadow: inset 0px 3px 3px 0px white;
+  }
+
+
   @media (min-width: 768px) {
     .feature-image-left {
       border-radius: 15px 0px 0px 15px;
@@ -36,6 +47,18 @@
     .feature-image-right {
       border-radius: 0px 15px 15px 0px;
       padding: 0px;
+    }
+    .feature-image-div-left {
+      border-radius: 15px 0px 0px 15px;
+    }
+    .feature-image-div-right {
+      border-radius: 0px 15px 15px 0px;
+    }
+    .inner-shadow-div-left {
+      box-shadow: inset -3px 0px 3px 0px white;
+    }
+    .inner-shadow-div-right {
+      box-shadow: inset 3px 0px 3px 0px white;
     }
   }
 </style>
@@ -53,7 +76,7 @@
 
     {{ with .first_item}}
     <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
-      <div class="align-self-center text-center text-md-left">
+      <div class="text-center text-md-left">
         <div class="content feature-content">
           <h4 class="subheading">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
@@ -80,10 +103,10 @@
     {{- if ne (mod $index 2) 1 }}
     <br>
     <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
-      <div class="col-md-6 nopadding order-md-1 order-2 text-center mb-lg-0">
+      <div class="col-md-6 nopadding order-md-1 order-2 text-center mb-lg-0 feature-image-div-left inner-shadow-div-left">
         <img class="img-fluid feature-image-left" src="{{ .image | absURL }}" alt="">
       </div>
-      <div class="col-md-6 nopadding order-md-2 order-1 align-self-center text-center text-md-left">
+      <div class="col-md-6 nopadding order-md-2 order-1 text-center text-md-left">
         <div class="content feature-content">
           <h4 class="subheading">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
@@ -104,7 +127,7 @@
     {{- else }}
     <br>
     <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
-      <div class="col-md-6 nopadding align-self-center text-center text-md-left">
+      <div class="col-md-6 nopadding text-center text-md-left">
         <div class="content feature-content">
           <h4 class="subheading">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
@@ -120,7 +143,7 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 nopadding text-center mb-lg-0">
+      <div class="col-md-6 nopadding text-center mb-lg-0 feature-image-div-right inner-shadow-div-right">
         <img class="img-fluid feature-image-right" src="{{ .image | absURL }}" alt="">
       </div>
     </div>

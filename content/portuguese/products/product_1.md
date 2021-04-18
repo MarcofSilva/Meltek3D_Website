@@ -39,8 +39,8 @@ gallery_buy:
   size : 6
   
   info:
-    - "Utilize esta caixa para preparar as suas cápsulas de forma fácil e rápida.
-      Pode ainda armazenar e transportar as mesmas de forma segura e prática."
+    - "Para preparar as suas cápsulas de forma fácil e rápida.
+      Pode ainda transportar e armazenar-las de forma prática e segura."
     - "Material: PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
     - "Dimensões: 64x44x26mm."
 
@@ -61,27 +61,27 @@ features:
       link  : "#"
   items :        
     # about product item loop
-    - image  : "images/products/feature2.png"
+    - image  : "images/products/feature2.jpg"
       title  : "Ajude o Ambiente"
-      content: "Recorremos a um material biodegradável para a produção, reduzindo o impacto negativo no ambiente."
+      content: "Recorremos a PLA, um material plástico biodegradável, reduzindo o impacto negativo no ambiente."
       button:
         enable: false
         label : "Check Features"
         link  : "#"
 
     # about product item loop
-    - image  : "images/products/feature3.png"
+    - image  : "images/products/feature3.jpg"
       title  : "Poupe Tempo"
-      content: "5x mais rápido prepara múltiplas cápsulas."
+      content: "Seja mais rápido/a a preparar as suas cápsulas."
       button:
         enable: false
         label : "Check Features"
         link  : "#"
         
     # about product item loop
-    - image  : "images/products/feature4_1.png"
-      title  : "Armazenamento e transporte"
-      content: "Guarde várias cápsulas de forma segura, nesta nossa caixa desenhada à medida."
+    - image  : "images/products/feature4.png"
+      title  : "Armazenamento e Transporte"
+      content: "Nesta caixa desenhada à medida pode armazenar e transportar as suas cápsulas de forma segura."
       button:
         enable: false
         label : "Check Features"
