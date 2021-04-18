@@ -5,16 +5,22 @@
 <style>
   .feature-content {
     padding: 10px;
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 0px
   }
   .feature-description {
-    font-size:x-large;
+    font-size:22px;
   }
   .feature-image-left, .feature-image-right {
     border-radius: 0px 0px 15px 15px;
+  }
+  .feature-image-left, .feature-image-right, .feature-double-image-right, .feature-double-image-left {
     padding: 0px;
     position: relative;
     z-index: -2;
+  }
+  .feature-double-image-right {
+    border-radius: 0px 0px 15px 15px;
   }
   .feature-image-div-left, .feature-image-div-right {
     border-radius: 0px 0px 15px 15px;
@@ -34,8 +40,12 @@
     padding: 0px;
   }
 
-  .inner-shadow-div-left, .inner-shadow-div-right {
+  .inner-shadow-div-left, .inner-shadow-div-right, .inner-shadow-double-div-left {
     box-shadow: inset 0px 3px 3px 0px white;
+  }
+
+  .subheading {
+    padding-bottom:0px
   }
 
 
@@ -48,11 +58,23 @@
       border-radius: 0px 15px 15px 0px;
       padding: 0px;
     }
+    .feature-double-image-right {
+      border-radius: 0px 0px 15px 0px;
+    }
+    .feature-double-image-left {
+      border-radius: 0px 0px 0px 15px;
+    }
     .feature-image-div-left {
       border-radius: 15px 0px 0px 15px;
     }
     .feature-image-div-right {
       border-radius: 0px 15px 15px 0px;
+    }
+    .feature-double-div-left {
+      padding-right: 0px;
+    }
+    .feature-double-div-right {
+      padding-left: 0px;
     }
     .inner-shadow-div-left {
       box-shadow: inset -3px 0px 3px 0px white;
@@ -60,6 +82,9 @@
     .inner-shadow-div-right {
       box-shadow: inset 3px 0px 3px 0px white;
     }
+    .inner-shadow-double-div-right {
+    box-shadow: inset 0px 3px 3px 0px white;
+  }
   }
 </style>
 
@@ -93,8 +118,12 @@
         </div>
       </div>
       <div class="row text-center mb-lg-0">
-        <div class="col-md-6 mb-lg-0 mb-4"><img class="img-fluid feature-image" src="{{ .image1 | absURL }}" alt=""></div>
-        <div class="col-md-6 mb-lg-0"><img class="img-fluid feature-image" src="{{ .image2 | absURL }}" alt=""></div>
+        <div class="col-md-6 mb-lg-0 feature-double-div-left">
+          <div class="inner-shadow-double-div-left"><img class="img-fluid feature-image feature-double-image-left" src="{{ .image1 | absURL }}" alt=""></div>
+        </div>
+        <div class="col-md-6 mb-lg-0 feature-double-div-right">
+          <div class="inner-shadow-double-div-right"><img class="img-fluid feature-image feature-double-image-right" src="{{ .image2 | absURL }}" alt=""></div>
+        </div>
       </div>
     </div>
     

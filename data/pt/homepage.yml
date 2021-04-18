@@ -2,13 +2,8 @@
 headerBanner:
   enable : true
   image : "images/promos/header.png"
-  imageSmall: "images/promos/promoSmall.png"
-  title : "Concebido por profissionais , o benefício para mentes criativas"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima
-            nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum.
-            <br><br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis commodi odit, illo, qui aliquam dol"
-
+  imageSmall: "images/promos/headerSmall.png"
+  
 ############################# banner ############################
 banner:
   enable : false

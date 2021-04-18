@@ -52,7 +52,7 @@ features:
     image1  : "images/products/feature1_1.png"
     image2  : "images/products/feature1_2.png"
     title  : "Menos Esforço"
-    content: "Prepare as suas cápsulas com menos esforço, fixando cada uma delas numa das cavidades em vez de a segurar com a mão."
+    content: "Prepare as suas misturas de óleos essenciais em cápsulas com menos esforço."
     button:
       enable: false
       label : "Check Features"
@@ -61,7 +61,7 @@ features:
     # about product item loop
     - image  : "images/products/feature2.jpg"
       title  : "Ajude o Ambiente"
-      content: "Recorremos a PLA, um material plástico biodegradável, reduzindo o impacto negativo no ambiente."
+      content: "Recorremos a PLA, um material plástico biocompatível e biodegradável, reduzindo o impacto negativo no ambiente."
       button:
         enable: false
         label : "Check Features"
@@ -79,7 +79,7 @@ features:
     # about product item loop
     - image  : "images/products/feature4.png"
       title  : "Armazenamento e Transporte"
-      content: "Nesta caixa desenhada à medida pode armazenar e transportar as suas cápsulas de forma segura."
+      content: "Armazene e transporte as suas cápsulas de forma segura e eficiente."
       button:
         enable: false
         label : "Check Features"
@@ -113,6 +113,9 @@ testimonials:
 other_products:
   enable: true
   #title and common variables are in data/product.yml but can be overriden here (by product)
+
+promo:
+  enable: false
 
 draft: false
 ---
