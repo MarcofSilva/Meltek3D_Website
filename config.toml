@@ -52,7 +52,7 @@ title = "Meltek3D"
 #    name = "About Us"
 #    weight = 4
 [[Languages.en.menu.main]]
-    URL = "about/#contacts_section"
+    URL = "about" #/#contacts_section"
     name = "Contact"
     weight = 5
 
@@ -96,7 +96,7 @@ title = "Meltek3D"
 #    name = "Quem Somos"
 #    weight = 4
 [[Languages.pt.menu.main]]
-    URL = "about/#contacts_section"
+    URL = "about" #/#contacts_section"
     name = "Contactos"
     weight = 5
 
@@ -150,4 +150,4 @@ logo_width          = "70px"
 #FIXME when more social nets are added, remove this facebook_icon from here and make them dynamic
 facebook_icon       = "images/icons/f_logo_blue.png"
 enable_cart         = false
-#XXX snipcart_api        = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
+#XXX snipcart_api   = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
