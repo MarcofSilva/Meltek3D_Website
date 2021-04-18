@@ -9,11 +9,11 @@ $primary-color: #f9a743;
 $icon-font: 'themefisher-font' !important;
 
 /*--
-    Dark mode
+    Dark mode same styling as light mode
 --*/
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light), (prefers-color-scheme: dark){
   //TODO adapt to support Samsung Browser dark mode (and maybe others, that change the website's colors)
-}
+
 
 /*--
     Common Css
@@ -200,7 +200,7 @@ a:active {
 .subheading {
   color: #3c3c3c;
   padding-bottom: 15px;
-  text-transform: capitalize;
+  //text-transform: capitalize;
   font-weight: 500;
   font-size: 32px;
   line-height: 45px;
@@ -642,4 +642,6 @@ textarea.form-control {
     padding: 10px 20px;
     background: #dadada;
   }
+}
+
 }
