@@ -17,9 +17,9 @@
 		  </div>
 		</div>
 		<div class="col-lg-5 col-md-6 offset-lg-1">
-		  <!--<h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>-->
+			<!--TODO clean this-->
 		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
-		  <p><strong>{{ i18n "sizes" }}:</strong> {{delimit .Params.gallery_buy.sizes ", "}} (<a href="#{{ .Params.Title }} other_products"><u>ver outros tamanhos</u></a>) </p>
+		  <p><strong>{{ i18n "sizes" }}: <span style="fontsize:larger;">{{ .Params.gallery_buy.size }}</span></strong>{{ if .Params.gallery_buy.other_sizes }}, {{delimit .Params.gallery_buy.other_sizes ", "}}{{ end }} (<a href="#{{ .Params.Title }} other_products"><u>ver outros tamanhos</u></a>) </p>
 		  <div class="py-4">
 			<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço de lançamento:</p>
 			<p class="price">

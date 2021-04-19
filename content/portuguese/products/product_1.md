@@ -36,13 +36,14 @@ gallery_buy:
   # product variation
   colors: ["Azul","Vermelho","Branco"]
   sizes : [3, 6]
+  other_sizes : [3]
   size : 6
   
   info:
     description: "Para preparar as suas cápsulas de forma fácil e rápida.
                   Pode ainda transportar e armazenar-las de forma prática e segura."
     material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
-    dimensions: "64x44x26mm."
+    dimensions: "64x44x26mm (caixa+tampa)."
 
 
 ############################# Feature ############################
@@ -51,8 +52,8 @@ features:
   #title : "" # Write in here will override the title defined for all products
   first_item:
     # about product item loop
-    image1  : "images/products/feature1_1.png"
-    image2  : "images/products/feature1_2.png"
+    image1  : "images/products/feature1_1.jpg"
+    image2  : "images/products/feature1_2.jpg"
     title  : "Menos Esforço"
     content: "Prepare as suas misturas de óleos essenciais em cápsulas, com menos esforço."
     button:
@@ -79,7 +80,7 @@ features:
         link  : "#"
         
     # about product item loop
-    - image  : "images/products/feature4.png"
+    - image  : "images/products/feature4.jpg"
       title  : "Armazenamento e Transporte"
       content: "Armazene e transporte as suas cápsulas de forma segura e eficiente."
       button:
