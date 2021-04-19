@@ -39,10 +39,10 @@ gallery_buy:
   size : 6
   
   info:
-    - "Para preparar as suas cápsulas de forma fácil e rápida.
-      Pode ainda transportar e armazenar-las de forma prática e segura."
-    - "Material: PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
-    - "Dimensões: 64x44x26mm."
+    description: "Para preparar as suas cápsulas de forma fácil e rápida.
+                  Pode ainda transportar e armazenar-las de forma prática e segura."
+    material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
+    dimensions: "64x44x26mm."
 
 
 ############################# Feature ############################

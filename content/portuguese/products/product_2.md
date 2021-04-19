@@ -38,10 +38,10 @@ gallery_buy:
   size : 3
   
   info:
-      - "Para preparar as suas cápsulas de forma fácil e rápida.
-        Pode ainda transportar e armazenar-las de forma prática e segura."
-      - "Material: PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
-      - "Dimensões: 64x25x26mm"
+      description: "Para preparar as suas cápsulas de forma fácil e rápida.
+                    Pode ainda transportar e armazenar-las de forma prática e segura."
+      material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
+      dimensions: "64x25x26mm"
 
 ############################# Feature ############################
 features:
@@ -52,7 +52,7 @@ features:
     image1  : "images/products/feature1_1.png"
     image2  : "images/products/feature1_2.png"
     title  : "Menos Esforço"
-    content: "Prepare as suas misturas de óleos essenciais em cápsulas com menos esforço."
+    content: "Prepare as suas misturas de óleos essenciais em cápsulas, com menos esforço."
     button:
       enable: false
       label : "Check Features"
@@ -70,7 +70,7 @@ features:
     # about product item loop
     - image  : "images/products/feature3.jpg"
       title  : "Poupe Tempo"
-      content: "Seja mais rápido/a a preparar as suas cápsulas."
+      content: "Poupe tempo ao preparar múltiplas doses até 5x mais rápido que convencionalmente."
       button:
         enable: false
         label : "Check Features"

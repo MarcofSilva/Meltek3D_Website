@@ -1,0 +1,53 @@
+{{ if .Params.gallery_buy.enable }}
+
+<section class="section">
+	<div class="container">
+	  <!-- Modal -->
+  <!--TODO Content management (texto martelado)-->
+  <div class="modal modal-slick fade" id="buyContactUs" tabindex="-1" role="dialog" aria-labelledby="modalTitleCenter" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h3 class="modal-title" id="modalTitleCenter">Para encomendar <strong>{{ .Params.title }}</strong> contacte-nos:</h3>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  
+		  <p>Estamos disponíveis de <strong>segunda</strong> a <strong>sábado</strong> entre <strong>9h-19h</strong></p>
+		  <ul class="list-unstyled contact-list">
+			<li class="mb-3"><i class="tf-ion-ios-telephone mr-2"></i><a href="tel:+351932812112"><strong>+351 932812112</strong></a></li>
+			<li class="mb-3"><i class="tf-ion-email mr-2"></i><a href="mailto:meltek3d@gmail.com"><strong>meltek3d@gmail.com</strong></a></li>
+		  </ul>
+		  <hr>
+		  <br>
+		  <p style="font-weight: 400;">Outros produtos em que também poderá ter interesse:</p>
+		  <!--<a href="#" class="btn btn-main">yup</a>-->
+		  <div class="wrap-modal-slider">
+			<div class="product-slider">
+				{{ $dateId := .Params.date }}
+				{{ range (where .Site.RegularPages "Section" "products") }}
+				{{ if ne .Params.date $dateId }}
+				<div class="block">
+					<div class="gallery-overlay">
+					<a href="{{ .Permalink }}" class="gallery-popup">
+						<i class="tf-ion-android-open"></i>
+					</a>
+					</div>
+					<img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
+					<h4 class="mt-2" style="text-align: center;">{{.Title}}</h4>
+				</div>
+				{{ end }}
+				{{ end }}
+			</div>
+		</div>
+		  
+		</div>
+	  </div>
+	</div>
+  </div>
+	</div>
+  </section>
+
+{{ end }}

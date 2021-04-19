@@ -32,3 +32,9 @@ other = "Colors"
 
 [sizes]
 other = "Sizes"
+
+[material]
+other = "Material"
+
+[dimensions]
+other = "Dimensions"

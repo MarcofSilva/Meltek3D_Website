@@ -32,3 +32,9 @@ other = "Cores"
 
 [sizes]
 other = "Tamanhos"
+
+[material]
+other = "Material"
+
+[dimensions]
+other = "Dimensões"
