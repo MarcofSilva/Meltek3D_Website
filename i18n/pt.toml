@@ -19,3 +19,22 @@ other = "O teu Email"
 
 [your_message]
 other = "A tua Mensagem"
+
+[404_page_not_found]
+other = "404 Página não encontrada"
+
+[404_go_to_home]
+other = "Ir para Página Inicial"
+
+#Product
+[colors]
+other = "Cores"
+
+[sizes]
+other = "Tamanhos"
+
+[material]
+other = "Material"
+
+[dimensions]
+other = "Dimensões"

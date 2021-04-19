@@ -2,14 +2,18 @@
 
 <!--TODO check which ones to use and which one to remove-->
 
-  {{- partial "banner.html" . }}
+  {{ partial "headerBanner" . }}
+  
+  {{ partial "banner" . }}
 
-  {{- partial "features.html" . }}
+  {{ partial "features" . }}
 
-  {{- partial "products.html" . }}
+  {{ partial "promo" . }}
 
-  {{- partial "subscription.html" . }}
+  {{ partial "products" . }}
 
-  {{- partial "testimonials.html" . }}
+  {{ partial "subscription" . }}
+
+  {{ partial "testimonials" . }}
 
 {{ end }}

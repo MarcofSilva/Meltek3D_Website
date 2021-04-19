@@ -1,11 +1,11 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if .Params.promo.enable }}
+{{ if $data.homepage.headerBanner.enable }}
 
-{{ with $data.homepage.promo }}
-<section class="section" style="padding-top: 20px; padding-bottom: 0px">
+{{ with $data.homepage.headerBanner }}
+<section class="section" style="padding: 0px">
   <div class="container">
-    <div class="row" onclick="location.href=''" style="cursor: pointer;">
+    <div class="row" onclick="location.href='{{ "products/product_1" | relLangURL }}'" style="cursor: pointer;">
       <picture class="img-fluid">
         <source 
            media="(max-width: 767px)"

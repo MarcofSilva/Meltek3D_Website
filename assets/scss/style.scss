@@ -1,4 +1,3 @@
-@import 'custom';
 @import 'mixins';
 
 // Variables
@@ -10,11 +9,18 @@ $primary-color: #f9a743;
 $icon-font: 'themefisher-font' !important;
 
 /*--
+    Dark mode same styling as light mode
+--*/
+@media (prefers-color-scheme: dark){
+  //TODO adapt to support Samsung Browser dark mode (and maybe others, that change the website's colors)
+}
+
+/*--
     Common Css
 --*/
 body {
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
   line-height: 25px;
   color: #3b4045;
   font-family: $primary-font;
@@ -61,6 +67,7 @@ h3,
 .h3 {
   font-size: 23px;
   line-height: 25px;
+  font-weight: 400;
 }
 
 h4,
@@ -129,7 +136,11 @@ a:active {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 60px 0;
+
+  @include mobile {
+    padding: 25px 0;
+  }
 }
 
 .font-size-60 {
@@ -156,6 +167,11 @@ a:active {
 /*--
     custom heading
 --*/
+
+#header.active {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .text-center {
   text-align: center;
 }
@@ -184,10 +200,11 @@ a:active {
 .subheading {
   color: #3c3c3c;
   padding-bottom: 15px;
-  text-transform: capitalize;
+  //text-transform: capitalize;
   font-weight: 500;
   font-size: 32px;
   line-height: 45px;
+  font-weight: 600;
 }
 
 .btn {
@@ -198,10 +215,10 @@ a:active {
   color: #fff;
   border-radius: 30px;
   font-size: 18px;
-  padding: 15px 40px;
+  padding: 10px 20px;
   display: inline-block;
   background-color: $primary-color;
-  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
+  box-shadow: 0 5px 20px rgba(249, 167, 68, 0.5);
   background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
 
   &:hover,
@@ -287,11 +304,13 @@ a:active {
 }
 
 /*--
-  Gallery start
+  Gallery start (and gallery inside modal-body
 --*/
 .gallery {
   padding-bottom: 100px;
-
+}
+.gallery, .modal-body {
+  
   .owl-item {
     overflow: hidden;
     position: relative;
@@ -469,8 +488,12 @@ s.price {
 .product-info {
   text-align: center;
 
-  .price {
-    font-size: 100%;
+  p.price {
+    font-size: 130%;
+  }
+
+  s.price {
+    font-size: 80%;
   }
 }
 

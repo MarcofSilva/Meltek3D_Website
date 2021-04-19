@@ -8,7 +8,7 @@
       </div>
       {{ range (where .Site.RegularPages "Section" "products") }}
       <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="block">
+        <div class="block animate__animated animate__fadeIn">
           <div class="gallery-overlay">
             <a href="{{ .Permalink }}" class="gallery-popup">
               <i class="tf-ion-android-open"></i>
@@ -18,8 +18,15 @@
         </div>
         <div class="product-info">
         <h4 class="mb-2">{{.Title}}</h4>
-        <p class="price">{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
-          {{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
+        <p class="price">
+          {{if .Params.gallery_buy.discount_price}}
+            <s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
+          {{end}}
+          {{if .Params.gallery_buy.discount_price}}
+            {{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
+          {{else}}
+            {{site.Params.currency}}{{.Params.gallery_buy.price}}
+          {{end}}
           </p>
         </div>
       </div>

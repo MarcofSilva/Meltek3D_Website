@@ -41,10 +41,10 @@ sections:
 - type: heading
   label: Info
 - type: document
-  path: content/english/contact/_index.md
+  path: content/english/about/_index.md
   label: Contact Info (en)
 - type: document
-  path: content/portuguese/contact/_index.md
+  path: content/portuguese/about/_index.md
   label: Contact Info (pt)
 - type: document
   path: content/english/terms-conditions/_index.md

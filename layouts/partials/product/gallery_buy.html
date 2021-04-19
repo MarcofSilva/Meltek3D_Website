@@ -2,8 +2,11 @@
 
 <section class="section">
 	<div class="container">
+		<div class="heading">
+			<h2>{{ .Params.title | markdownify }}</h2>
+		</div>
 	  <div class="row">
-		<div class="col-md-5 mb-4 mb-md-0">
+		<div class="col-md-6 mb-4 mb-md-0">
 		  <!-- product image slider -->
 		  <div class="product-image-slider">
 			{{ range .Params.images }}
@@ -13,13 +16,24 @@
 			{{ end }}
 		  </div>
 		</div>
-		<div class="col-lg-6 col-md-7 offset-lg-1">
-		  <h1 class="mb-4">{{ .Params.gallery_buy.Title }}</h1>
-		  <p><strong>Colors:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
-		  <p><strong>Sizes:</strong> {{delimit .Params.gallery_buy.sizes ", "}}</p>
-		  <p class="price py-4">{{if .Params.gallery_buy.discount_price}}{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}{{else}}{{site.Params.currency}}{{.Params.gallery_buy.price}}{{end}}
-		  {{if .Params.gallery_buy.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>{{end}}
-		  </p>
+		<div class="col-lg-5 col-md-6 offset-lg-1">
+			<!--TODO clean this-->
+		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
+		  <p><strong>{{ i18n "sizes" }}: <span style="fontsize:larger;">{{ .Params.gallery_buy.size }}</span></strong>{{ if .Params.gallery_buy.other_sizes }}, {{delimit .Params.gallery_buy.other_sizes ", "}}{{ end }} (<a href="#{{ .Params.Title }} other_products"><u>ver outros tamanhos</u></a>) </p>
+		  <div class="py-4">
+			<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço de lançamento:</p>
+			<p class="price">
+				{{if .Params.gallery_buy.discount_price}}
+					<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
+				{{end}}
+				{{if .Params.gallery_buy.discount_price}}
+					{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
+				{{else}}
+					{{site.Params.currency}}{{.Params.gallery_buy.price}}
+				{{end}}
+			</p>
+		  </div>
+		  {{ if .Site.Params.enable_cart }}
 		  <button class="snipcart-add-item btn btn-main mb-5" 
 			data-item-id="{{.Params.gallery_buy.Title | urlize}}__{{if .Params.gallery_buy.discount_price}}{{.Params.gallery_buy.discount_price}}{{else}}{{.Params.gallery_buy.price}}{{end}}"
 			data-item-name="{{.Params.gallery_buy.Title}}"
@@ -34,7 +48,28 @@
 			data-item-custom2-options="{{range $index, $element:= .Params.gallery_buy.sizes}}{{if eq $index 0}}{{. | title}}{{else}}|{{. | title}}{{end}}{{end}}"
 			{{end}}>{{i18n "add_to_cart"}}
 		  </button>
-		  <div class="content">{{.Params.gallery_buy.Content}}</div>
+		  {{ else }}
+		  	<!-- Botão para acionar modal -->
+		  	<button type="button" class="btn btn-main mb-5" data-toggle="modal" data-target="#buyContactUs">
+			  Encomendar <!--TODO text martelado-->
+		  	</button>
+		  {{ end }}
+		  	<div class="content">
+				<ul>
+					{{ with .Params.gallery_buy.info}}
+					<li>
+						{{ .description }}
+					</li>
+					<li>
+						<strong>{{ i18n "material" }}: </strong>{{ .material }}
+					</li>
+					<li>
+						<strong>{{ i18n "dimensions" }}: </strong>{{ .dimensions }}
+					</li>
+					{{ end }}
+				</ul>
+			  {{.Params.gallery_buy.Content}}
+			</div>
 		</div>
 	  </div>
 	</div>

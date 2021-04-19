@@ -3,10 +3,21 @@ $(window).on('load', function () {
   $('.preloader').fadeOut(100);
 });
 
+// Scroll
+// - Shadow in header after scroll
+$(window).scroll(function() {     
+  var scroll = $(window).scrollTop();
+  if (scroll > 0) {
+      $("#header").addClass("active");
+  }
+  else {
+      $("#header").removeClass("active");
+  }
+});
+
 (function ($) {
   'use strict';
 
-  
   // product Slider
   $('.product-image-slider').slick({
     autoplay: false,
@@ -63,6 +74,10 @@ $(window).on('load', function () {
         }
       }
     ]
+  });
+
+  $('.modal-slick').on('shown.bs.modal', function (e) {
+    $('.product-slider').slick('setPosition');
   });
 
   /*#TODO

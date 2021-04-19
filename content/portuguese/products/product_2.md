@@ -1,16 +1,15 @@
 ---
-title : "Caixa para 6 cápsulas"
-date  : 2021-02-24T22:32:39Z
+title : "Caixa para 3 cápsulas"
+date  : 2021-02-24T22:33:40Z
 # meta description
 description : "this is meta description"
 
-weight: 1
+weight: 2
 
 images: 
-- "images/products/capsules_6_blue.png"
-- "images/products/capsules_6_red.png"
-- "images/products/capsules_6_white.png"
-- "images/products/capsules_6_closed_white.png"
+- "images/products/capsules_3_red.png"
+- "images/products/capsules_3_blue.png"
+- "images/products/capsules_3_white.png"
 
 #XXX when creating product, give this files a name considering that it will be shown in the url
 
@@ -30,21 +29,20 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "6.00"
-  discount_price: "5.50"
+  price         : "4.50"
+  discount_price: "4.00"
 
   # product variation
   colors: ["Azul","Vermelho","Branco"]
   sizes : [3, 6]
-  other_sizes : [3]
-  size : 6
+  other_sizes : [6]
+  size : 3
   
   info:
-    description: "Para preparar as suas cápsulas de forma fácil e rápida.
-                  Pode ainda transportar e armazenar-las de forma prática e segura."
-    material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
-    dimensions: "64x44x26mm (caixa+tampa)."
-
+      description: "Para preparar as suas cápsulas de forma fácil e rápida.
+                    Pode ainda transportar e armazenar-las de forma prática e segura."
+      material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
+      dimensions: "64x25x26mm (caixa+tampa)."
 
 ############################# Feature ############################
 features:

@@ -1,15 +1,20 @@
 {{ define "main" }}
 
 
-  {{- partial "product/banner.html" . }}
+  {{ partial "product/gallery_buy" . }}
+
+  {{ partial "product/buyModal" . }}
 
 
-  {{- partial "product/gallery_buy.html" . }}
+  {{ partial "product/promo" . }}
 
 
-  {{- partial "product/features.html" . }}
+  {{ partial "product/features" . }}
 
 
-  {{- partial "product/testimonials.html" . }}
+  {{ partial "product/testimonials" . }}
+
+
+  {{ partial "product/other_products" . }}
 
 {{ end }}

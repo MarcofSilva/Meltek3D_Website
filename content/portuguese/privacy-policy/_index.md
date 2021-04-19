@@ -1,7 +1,7 @@
 ---
 title: "Termos & Condições"
 description : "this is a meta description"
-draft: false
+draft: true
 ---
 #TODO como fazer termos e condições quando tivermos o site operacional e se é sequer necessário (acho que é oprque já envolve compras)
 

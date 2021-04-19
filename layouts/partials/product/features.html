@@ -1,24 +1,148 @@
 {{ if .Params.features.enable }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<style>
+  .feature-content {
+    padding: 20px;
+    padding-bottom: 0px
+  }
+  .feature-description {
+    font-size:22px;
+  }
+  .feature-image-left, .feature-image-right {
+    border-radius: 0px 0px 15px 15px;
+  }
+  .feature-image-left, .feature-image-right, .feature-double-image-right, .feature-double-image-left {
+    padding: 0px;
+    position: relative;
+    z-index: -2;
+  }
+  .feature-double-image-right {
+    border-radius: 0px 0px 15px 15px;
+  }
+  .feature-image-div-left, .feature-image-div-right {
+    border-radius: 0px 0px 15px 15px;
+  }
+  .feature-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 5px #bbbbbb75;
+  }
+  .background-gray {
+    background-color: #f4f4f4;
+  }
+  .bullet-arrow {
+    margin-bottom: 10px;
+  }
+  .nopadding {
+    padding: 0px;
+  }
+
+  .inner-shadow-div-left, .inner-shadow-div-right, .inner-shadow-double-div-left {
+    box-shadow: inset 0px 3px 3px 0px white;
+  }
+
+  .subheading {
+    padding-bottom:0px
+  }
+
+
+  @media (min-width: 768px) {
+    .feature-image-left {
+      border-radius: 15px 0px 0px 15px;
+      padding: 0px;
+    }
+    .feature-image-right {
+      border-radius: 0px 15px 15px 0px;
+      padding: 0px;
+    }
+    .feature-double-image-right {
+      border-radius: 0px 0px 15px 0px;
+    }
+    .feature-double-image-left {
+      border-radius: 0px 0px 0px 15px;
+    }
+    .feature-image-div-left {
+      border-radius: 15px 0px 0px 15px;
+    }
+    .feature-image-div-right {
+      border-radius: 0px 15px 15px 0px;
+    }
+    .feature-double-div-left {
+      padding-right: 0px;
+    }
+    .feature-double-div-right {
+      padding-left: 0px;
+    }
+    .inner-shadow-div-left {
+      box-shadow: inset -3px 0px 3px 0px white;
+    }
+    .inner-shadow-div-right {
+      box-shadow: inset 3px 0px 3px 0px white;
+    }
+    .inner-shadow-double-div-right {
+    box-shadow: inset 0px 3px 3px 0px white;
+  }
+  }
+</style>
+
 {{ with .Params.features }}
-<section class="feature-list section">
+<section class="feature-list section background-gray">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="heading">
-          <h2>{{ .title | markdownify }}</h2>
+          <h2>{{ cond (isset . "title") .title $data.product.features.title | markdownify }}</h2>
         </div>
       </div>
     </div>
+
+    {{ with .first_item}}
+    <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
+      <div class="text-center text-md-left">
+        <div class="content feature-content">
+          <h4 class="subheading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            {{ .title | markdownify }}
+          </h4>
+          <p class="feature-description">{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="row text-center mb-lg-0">
+        <div class="col-md-6 mb-lg-0 feature-double-div-left">
+          <div class="inner-shadow-double-div-left"><img class="img-fluid feature-image feature-double-image-left" src="{{ .image1 | absURL }}" alt=""></div>
+        </div>
+        <div class="col-md-6 mb-lg-0 feature-double-div-right">
+          <div class="inner-shadow-double-div-right"><img class="img-fluid feature-image feature-double-image-right" src="{{ .image2 | absURL }}" alt=""></div>
+        </div>
+      </div>
+    </div>
+    
+    {{ end }}
     {{ range $index, $element := .items }}
     {{- if ne (mod $index 2) 1 }}
-    <div class="row mb-40">
-      <div class="col-md-6 text-center mb-5 mb-lg-0">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+    <br>
+    <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
+      <div class="col-md-6 nopadding order-md-1 order-2 text-center mb-lg-0 feature-image-div-left inner-shadow-div-left">
+        <img class="img-fluid feature-image-left" src="{{ .image | absURL }}" alt="">
       </div>
-      <div class="col-md-6 align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
+      <div class="col-md-6 nopadding order-md-2 order-1 text-center text-md-left">
+        <div class="content feature-content">
+          <h4 class="subheading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            {{ .title | markdownify }}
+          </h4>
+          <p class="feature-description">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
             {{ with .button }}
             <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
@@ -27,12 +151,19 @@
         </div>
       </div>
     </div>
+    
     {{- else }}
-    <div class="row mb-40">
-      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
-        <div class="content">
-          <h4 class="subheading">{{ .title | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
+    <br>
+    <div class="row mb-40 feature-card" data-aos="fade-zoom-in">
+      <div class="col-md-6 nopadding text-center text-md-left">
+        <div class="content feature-content">
+          <h4 class="subheading">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill bullet-arrow" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+            {{ .title | markdownify }}
+          </h4>
+          <p class="feature-description">{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
           <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
@@ -40,13 +171,21 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+      <div class="col-md-6 nopadding text-center mb-lg-0 feature-image-div-right inner-shadow-div-right">
+        <img class="img-fluid feature-image-right" src="{{ .image | absURL }}" alt="">
       </div>
     </div>
+    
     {{ end }}
     {{ end }}
+   <div style="display: flex; justify-content: center">
+    <!-- Botão para acionar modal -->
+    <button type="button" class="btn btn-main mt-5" data-toggle="modal" data-target="#buyContactUs">
+      Encomendar <!--TODO text martelado-->
+    </button>
+  </div>
   </div>
 </section>
 {{ end }}
+
 {{ end }}
