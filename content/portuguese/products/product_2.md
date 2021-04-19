@@ -43,6 +43,7 @@ gallery_buy:
                     Pode ainda transportar e armazenar de forma prática e segura."
       material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
       dimensions: "64x25x26mm (caixa+tampa)."
+      extras: "Acresce o valor dos portes."
 
 ############################# Feature ############################
 features:
