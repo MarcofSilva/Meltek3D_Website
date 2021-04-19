@@ -40,7 +40,7 @@ gallery_buy:
   
   info:
       description: "Para preparar as suas cápsulas de forma fácil e rápida.
-                    Pode ainda transportar e armazenar-las de forma prática e segura."
+                    Pode ainda transportar e armazenar de forma prática e segura."
       material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
       dimensions: "64x25x26mm (caixa+tampa)."
 
@@ -79,7 +79,7 @@ features:
         
     # about product item loop
     - image  : "images/products/feature4.jpg"
-      title  : "Armazenamento e Transporte"
+      title  : "Armazene e Transporte"
       content: "Armazene e transporte as suas cápsulas de forma segura e eficiente."
       button:
         enable: false
