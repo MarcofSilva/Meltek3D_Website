@@ -8,6 +8,7 @@ weight: 1
 
 images: 
 - "images/products/capsules_6_blue.png"
+- "images/products/capsules_6_blue_oil.png"
 - "images/products/capsules_6_red.png"
 - "images/products/capsules_6_white.png"
 - "images/products/capsules_6_closed_white.png"

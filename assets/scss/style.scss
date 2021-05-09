@@ -6,6 +6,7 @@ sans-serif;
 $secondary-font: 'Droid Serif',
 serif;
 $primary-color: #f9a743;
+$hover-primary-color: #ffb459;
 $icon-font: 'themefisher-font' !important;
 
 /*--
@@ -223,7 +224,7 @@ a:active {
 
   &:hover,
   &:focus {
-    background-color: $primary-color;
+    background-color: $hover-primary-color;
     color: #fff;
   }
 }

@@ -14,6 +14,18 @@ $(window).scroll(function() {
       $("#header").removeClass("active");
   }
 });
+// - Arrow bouncing
+/*$(window).scroll(function() {     
+  var scroll = $(window).scrollTop();
+  var arrowOffsetTop = document.querySelector('#banner-arrow').offsetTop;
+  var headerHeight = document.querySelector("#header").offsetHeight;
+  if (scroll > arrowOffsetTop - 2*headerHeight) {
+      $("#banner-arrow").removeClass("animate__animated");
+  }
+  else {
+      $("#banner-arrow").addClass("animate__animated");
+  }
+});*/
 
 (function ($) {
   'use strict';

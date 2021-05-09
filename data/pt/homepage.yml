@@ -1,15 +1,15 @@
 ############################# promo ############################
 headerBanner:
-  enable : true
+  enable : false
   image : "images/promos/header.png"
   imageSmall: "images/promos/headerSmall.png"
   
 ############################# banner ############################
 banner:
-  enable : false
-  title : "Acredita na Tecnologia , Faz a mudança"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
-  image : "images/promo/header.png"
+  enable : true
+  title : "Tornamos as suas ideias em realidade!"
+  content : "Desenhamos e produzimos os melhores produtos à sua medida."
+  image : "images/banner.png"
   button:
    enable : true
    label : "Ver todos os Produtos"
@@ -59,7 +59,31 @@ features:
 
 ############################# promo ############################
 promo:
-  enable : true
+    enable : true
+    title : "Caixas para preparação de cápsulas"
+    cards:
+    - title: Preço de Lançamento
+      image: "images/banner2.png"
+      content:
+        - text: "Caixa para 3 cápsulas:"
+          oldPrice: "€4.50"
+          currentPrice: "€4.00"
+        - text: "Caixa para 6 cápsulas: "
+          oldPrice: "€6.00"
+          currentPrice: "€5.50"
+      dueDate: "*Válido até 31 de Maio"
+      btnLabel: "Ver Mais"
+      btnLink: "products"
+    - title: Promoção de Lançamento
+      image: "images/banner3.png"
+      content: "Oferta de uma caixa para 1 cápsula na compra de 2 ou mais artigos!"
+      dueDate: "*Válido até 31 de Maio"
+      btnLabel: "Ver Mais"
+      btnLink: "products"
+
+############################# promo Backup ############################
+promo_bak:
+  enable : false
   image : "images/promos/promo.png"
   imageSmall: "images/promos/promoSmall.png"
   title : "Concebido por profissionais , o benefício para mentes criativas"
