@@ -1,19 +1,25 @@
 {{ define "main" }}
 
-<!--TODO check which ones to use and which one to remove-->
+    <!--TODO check which ones to use and which one to remove-->
 
-  {{ partial "headerBanner" . }}
-  
-  {{ partial "banner" . }}
+    {{ partial "headerBanner" . }}
 
-  {{ partial "features" . }}
+    {{ partial "banner" . }}
 
-  {{ partial "promo" . }}
+    <!--
+    <div class="align-self-center" style="display: flex; justify-content: center; background-image: linear-gradient(to bottom, rgb(244, 244, 244), rgb(244, 244, 244), rgb(244, 244, 244), white, white, white);">
+        <a id="banner-arrow" href="#banner-arrow" class="btn btn-main btn-main-sm blue-button"> V </a>
+    </div>
+    -->
 
-  {{ partial "products" . }}
+    {{ partial "features" . }}
 
-  {{ partial "subscription" . }}
+    {{ partial "promo" . }}
 
-  {{ partial "testimonials" . }}
+    {{ partial "products" . }}
+
+    {{ partial "subscription" . }}
+
+    {{ partial "testimonials" . }}
 
 {{ end }}

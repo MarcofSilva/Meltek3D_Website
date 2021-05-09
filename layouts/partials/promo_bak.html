@@ -1,0 +1,19 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.promo.enable }}
+
+{{ with $data.homepage.promo }}
+<section class="section" style="padding-top: 20px">
+  <div class="container">
+    <div class="row" onclick="location.href='{{ "products" | relLangURL }}'" style="cursor: pointer;">
+      <picture class="img-fluid">
+        <source 
+           media="(max-width: 767px)"
+           srcset="{{ .imageSmall | absURL }}">
+        <img class="img-fluid round-corners" src="{{ .image | absURL }}" alt="promo">
+     </picture>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
