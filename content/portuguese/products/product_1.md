@@ -32,7 +32,7 @@ gallery_buy:
   title: ""
   # product Price
   price         : "6.00"
-  discount_price: "5.50"
+  discount_price: ""
 
   # product variation
   colors: ["Azul","Vermelho","Branco"]

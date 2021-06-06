@@ -62,22 +62,22 @@ promo:
     enable : true
     title : "Caixas para preparação de cápsulas"
     cards:
-    - title: Preço de Lançamento
+    - title: Preços
       image: "images/banner2.png"
       content:
         - text: "Caixa para 3 cápsulas:"
-          oldPrice: "€4.50"
-          currentPrice: "€4.00"
+          oldPrice: ""
+          currentPrice: "€4.50"
         - text: "Caixa para 6 cápsulas: "
-          oldPrice: "€6.00"
-          currentPrice: "€5.50"
-      dueDate: "*Válido até 31 de Maio"
+          oldPrice: ""
+          currentPrice: "€6.00"
+      dueDate: ""
       btnLabel: "Ver Mais"
       btnLink: "products"
-    - title: Promoção de Lançamento
+    - title: Promoção
       image: "images/banner3.png"
       content: "Oferta de uma caixa para 1 cápsula na compra de 2 ou mais artigos!"
-      dueDate: "*Válido até 31 de Maio"
+      dueDate: ""
       btnLabel: "Ver Mais"
       btnLink: "products"
 

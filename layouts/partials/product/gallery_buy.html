@@ -21,7 +21,7 @@
 		  <p><strong>{{ i18n "colors" }}:</strong> {{delimit .Params.gallery_buy.colors ", "}}</p>
 		  <p><strong>{{ i18n "sizes" }}: <span style="font-size:larger;">{{ .Params.gallery_buy.size }}</span></strong>{{ if .Params.gallery_buy.other_sizes }}, {{delimit .Params.gallery_buy.other_sizes ", "}}{{ end }} (<a href="#{{ .Params.Title }} other_products"><u>ver outros tamanhos</u></a>) </p>
 		  <div class="py-4">
-			<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço de lançamento:</p>
+			<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço por unidade:</p>
 			<p class="price">
 				{{if .Params.gallery_buy.discount_price}}
 					<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
