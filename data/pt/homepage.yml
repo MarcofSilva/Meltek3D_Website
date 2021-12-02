@@ -71,15 +71,21 @@ promo:
         - text: "Caixa para 6 cápsulas: "
           oldPrice: ""
           currentPrice: "€6.00"
+        - text: "Caixa para 9 cápsulas:"
+          oldPrice: ""
+          currentPrice: "€7.00"
+        - text: "Caixa para 12 cápsulas: "
+          oldPrice: ""
+          currentPrice: "€8.00"
       dueDate: ""
       btnLabel: "Ver Mais"
       btnLink: "products"
-    - title: Promoção
-      image: "images/banner3.png"
-      content: "Oferta de uma caixa para 1 cápsula na compra de 2 ou mais artigos!"
-      dueDate: ""
-      btnLabel: "Ver Mais"
-      btnLink: "products"
+    #- title: Promoção
+    #  image: "images/banner3.png"
+    #  content: "Oferta de uma caixa para 1 cápsula na compra de 2 ou mais artigos!"
+    #  dueDate: ""
+    #  btnLabel: "Ver Mais"
+    #  btnLink: "products"
 
 ############################# promo Backup ############################
 promo_bak:
