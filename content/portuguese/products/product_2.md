@@ -15,7 +15,7 @@ images:
 
 ############################# banner ############################
 banner:
-  enable : true
+  enable : false
   title  : "Acredita na Tecnologia , Faz a mudança"
   content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
   image : "images/showcase/showcase-2.jpeg"
@@ -40,7 +40,8 @@ gallery_buy:
   
   info:
       description: "Para preparar as suas cápsulas de forma fácil e rápida.
-                    Pode ainda transportar e armazenar de forma prática e segura."
+                    Pode ainda transportar e armazenar de forma prática e segura.
+                  Disponível para 3, 6, 9 e 12 cápsulas."
       material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
       dimensions: "64x25x26mm (caixa+tampa)."
       extras: "Acresce o valor dos portes."

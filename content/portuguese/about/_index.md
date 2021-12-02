@@ -9,17 +9,17 @@ contacts:
   location : "Algarve, Portugal" #TODO Review Algarve?
   content : 
   social :
-    enable: false #TODO true when we have social media
+    enable: true #TODO true when we have social media
     title: "Visite-nos nas redes sociais"
     networks:
       facebook:
         text: "facebook.com/Meltek3D"
         icon: "tf-ion-social-facebook"
-        link: "https://www.facebook.com"
-      #instagram:
-      #  text: "instagram.com/Meltek3D"
-      #  icon: "tf-ion-social-instagram"
-      #  link: "https://www.instagram.com/"
+        link: "https://www.facebook.com/meltek3d"
+      instagram:
+        text: "instagram.com/Meltek3D"
+        icon: "tf-ion-social-instagram"
+        link: "https://www.instagram.com/meltek3d"
       #linkedin:
       #  text: "linkedin.com/Meltek3D"
       #  icon: "tf-ion-social-linkedin"

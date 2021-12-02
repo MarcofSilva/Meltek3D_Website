@@ -1,17 +1,20 @@
 ---
-title : "Caixa para 6 cápsulas"
-date  : 2021-02-24T22:32:39Z
+title: "Caixa para 3 frascos"
+date: 2021-07-07T19:05:27+01:00
+draft: false
+
+
 # meta description
 description : "this is meta description"
 
-weight: 1
+weight: 3
 
 images: 
-- "images/products/capsules_6_blue.png"
-- "images/products/capsules_6_blue_oil.png"
-- "images/products/capsules_6_red.png"
-- "images/products/capsules_6_white.png"
-- "images/products/capsules_6_closed_white.png"
+- "images/products/3bottles_black_1.png"
+- "images/products/3bottles_black_3.png"
+- "images/products/3bottles_black_5.png"
+- "images/products/3bottles_black_6.png"
+- "images/products/3bottles_black_7.png"
 
 #XXX when creating product, give this files a name considering that it will be shown in the url
 
@@ -31,27 +34,25 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "6.00"
-  discount_price: ""
+  price             : "14.5"
+  price_personalized: "15.5"
+  discount_price    : ""
 
   # product variation
-  colors: ["Azul","Vermelho","Branco"]
-  sizes : [3, 6]
-  other_sizes : [3]
-  size : 6
+  colors: ["Preto"]
+  sizes : [3]
+  other_sizes:
+  size : 3
   
   info:
-    description: "Para preparar as suas cápsulas de forma fácil e rápida.
-                  Pode ainda transportar e armazenar de forma prática e segura.
-                  Disponível para 3, 6, 9 e 12 cápsulas."
-    material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
-    dimensions: "64x44x26mm (caixa+tampa)."
-    extras: "Acresce o valor dos portes."
-
+      description: "Caixa suporte para frascos de 15ml."
+      material: "PLA (Poliácido láctico) - plástico biodegradável e biocompatível."
+      dimensions: "11x8x7cm (comprimento, largura, altura)"
+      extras: "Acresce o valor dos portes."
 
 ############################# Feature ############################
 features:
-  enable: true
+  enable: false
   #title : "" # Write in here will override the title defined for all products
   first_item:
     # about product item loop
@@ -122,6 +123,4 @@ other_products:
 
 promo:
   enable: false
-
-draft: false
 ---
