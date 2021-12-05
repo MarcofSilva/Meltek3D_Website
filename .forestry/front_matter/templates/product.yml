@@ -12,6 +12,27 @@ fields:
   type: image_gallery
   config: {}
   label: images
+- name: gallery_buy
+  type: field_group
+  config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: Enable
+    hidden: true
+    default: true
+  label: Gallery Buy
+  description: Informação referente ao produto, tal como preço, descrição, etc.
+- name: features
+  type: field_group
+  config: {}
+  label: Features
+  description: Zona mais descritiva sobre o produto
+- name: other_products
+  type: field_group
+  config: {}
+  label: Other Products
+  description: Secção no final da página a mostrar outros produtos.
 - type: text
   name: gallery_buy/info/description
   label: description
