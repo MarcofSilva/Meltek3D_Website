@@ -8,6 +8,9 @@ fields:
 - type: datetime
   name: date
   label: date
+  default: now
+  config:
+    date_format: DD/MM/YYYY
 - name: images
   type: image_gallery
   config: {}
@@ -45,14 +48,6 @@ fields:
       min: 1
       max: 
     label: Colors
-  - name: other_sizes
-    type: list
-    config:
-      use_select: false
-      min: 
-      max: 
-    label: Other Sizes
-    description: Outros tamanhos disponíveis
   - name: size
     type: number
     label: Size
@@ -64,32 +59,71 @@ fields:
       min: 1
       max: 
       step: 1
+  - name: other_sizes
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Other Sizes
+    description: Outros tamanhos disponíveis
+  - name: info
+    type: field_group
+    config: {}
+    fields:
+    - name: description
+      type: text
+      config:
+        required: true
+      label: Description
+    - name: material
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Material
+    - name: dimensions
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Dimensions
+    - name: extras
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Extras
+    label: Info Descritiva
   label: Gallery Buy
   description: Informação referente ao produto, tal como preço, descrição, etc.
 - name: features
   type: field_group
   config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: Enable
+    default: false
   label: Features
-  description: Zona mais descritiva sobre o produto
+  description: Zona mais descritiva sobre o produto. Ainda não estandardizado.
+  hidden: true
 - name: other_products
   type: field_group
   config: {}
+  fields:
+  - name: enable
+    type: boolean
+    label: Enable
+    default: true
   label: Other Products
   description: Secção no final da página a mostrar outros produtos.
-- type: text
-  name: gallery_buy/info/description
-  label: description
-  config:
-    required: true
-- type: text
-  name: price
-  label: price
-- type: text
-  name: discount_price
-  label: discount_price
-- type: list
-  name: colors
-  label: colors
-- type: list
-  name: sizes
-  label: sizes
