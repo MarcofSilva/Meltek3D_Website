@@ -45,15 +45,6 @@ fields:
       min: 1
       max: 
     label: Colors
-  - name: size
-    type: list
-    config:
-      use_select: false
-      min: 1
-      max: 
-    label: Size
-    description: 'Tamanho: número de cápsulas, frascos, etc.<br>Deixar vazio caso
-      não seja necessário referir tamanho nenhum.'
   - name: other_sizes
     type: list
     config:
@@ -62,6 +53,17 @@ fields:
       max: 
     label: Other Sizes
     description: Outros tamanhos disponíveis
+  - name: size
+    type: number
+    label: Size
+    description: 'Tamanho: número de cápsulas, frascos, etc.<br>Deixar vazio caso
+      não seja necessário referir tamanho nenhum.'
+    default: 
+    required: true
+    config:
+      min: 1
+      max: 
+      step: 1
   label: Gallery Buy
   description: Informação referente ao produto, tal como preço, descrição, etc.
 - name: features
