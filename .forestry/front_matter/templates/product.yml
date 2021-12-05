@@ -21,6 +21,23 @@ fields:
     label: Enable
     hidden: true
     default: true
+  - name: price
+    type: text
+    config:
+      required: true
+    label: Price
+  - name: discount_price
+    type: text
+    config:
+      required: false
+    label: Discount Price
+    description: Preço atual com desconto.
+  - name: price_personalized
+    type: text
+    config:
+      required: false
+    label: Price Personalized
+    description: "( € personalizado com nome )"
   label: Gallery Buy
   description: Informação referente ao produto, tal como preço, descrição, etc.
 - name: features
