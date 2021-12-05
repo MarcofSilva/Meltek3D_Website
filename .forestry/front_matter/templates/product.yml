@@ -97,7 +97,7 @@ fields:
       label: Dimensions
     - name: extras
       type: textarea
-      default: ''
+      default: Acresce o valor dos portes.
       config:
         required: false
         wysiwyg: false
