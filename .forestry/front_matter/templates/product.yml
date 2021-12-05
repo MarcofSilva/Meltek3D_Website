@@ -11,6 +11,7 @@ fields:
   default: now
   config:
     date_format: DD/MM/YYYY
+    time_format: h:mm A ZZ
 - name: images
   type: image_gallery
   config: {}
