@@ -52,6 +52,8 @@ fields:
       min: 1
       max: 
     label: Size
+    description: 'Tamanho: número de cápsulas, frascos, etc.<br>Deixar vazio caso
+      não seja necessário referir tamanho nenhum.'
   - name: other_sizes
     type: list
     config:
