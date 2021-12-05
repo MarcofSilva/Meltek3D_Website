@@ -13,8 +13,10 @@ fields:
   config: {}
   label: images
 - type: text
-  name: description
+  name: info/description
   label: description
+  config:
+    required: true
 - type: text
   name: price
   label: price
