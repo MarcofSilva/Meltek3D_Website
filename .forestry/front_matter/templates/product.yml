@@ -42,9 +42,24 @@ fields:
     type: list
     config:
       use_select: false
-      min: 
+      min: 1
       max: 
     label: Colors
+  - name: size
+    type: list
+    config:
+      use_select: false
+      min: 1
+      max: 
+    label: Size
+  - name: other_sizes
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Other Sizes
+    description: Outros tamanhos disponíveis
   label: Gallery Buy
   description: Informação referente ao produto, tal como preço, descrição, etc.
 - name: features
