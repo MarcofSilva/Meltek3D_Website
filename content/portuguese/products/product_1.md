@@ -31,7 +31,7 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price         : "6.00"
+  price         : ""
   discount_price: ""
 
   # product variation

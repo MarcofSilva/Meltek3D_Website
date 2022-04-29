@@ -59,7 +59,7 @@ features:
 
 ############################# promo ############################
 promo:
-    enable : true
+    enable : false
     title : "Caixas para preparação de cápsulas"
     cards:
     - title: Preços
