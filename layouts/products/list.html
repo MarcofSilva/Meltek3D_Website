@@ -19,13 +19,15 @@
         <div class="product-info">
         <h4 class="mb-2">{{.Title}}</h4>
         <p class="price">
-          {{if .Params.gallery_buy.discount_price}}
-            <s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
-          {{end}}
-          {{if .Params.gallery_buy.discount_price}}
-            {{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
-          {{else}}
-            {{site.Params.currency}}{{.Params.gallery_buy.price}}
+          {{if .Params.gallery_buy.price}}
+            {{if .Params.gallery_buy.discount_price}}
+              <s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
+            {{end}}
+            {{if .Params.gallery_buy.discount_price}}
+              {{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
+            {{else}}
+              {{site.Params.currency}}{{.Params.gallery_buy.price}}
+            {{end}}
           {{end}}
           </p>
         </div>

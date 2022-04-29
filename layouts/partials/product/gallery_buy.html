@@ -23,21 +23,23 @@
 		  <p><strong>{{ i18n "sizes" }}: <span style="font-size:larger;">{{ .Params.gallery_buy.size }}</span></strong>{{ if .Params.gallery_buy.other_sizes }}, {{delimit .Params.gallery_buy.other_sizes ", "}}{{ end }} (<a href="#{{ .Params.Title }} other_products"><u>ver outros produtos</u></a>) </p>
 		  {{end}}
 		  <div class="py-4">
-			<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço por unidade:</p>
-			<p class="price">
-				{{if .Params.gallery_buy.discount_price}}
-					<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
-				{{end}}
-				{{if .Params.gallery_buy.discount_price}}
-					{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
-				{{else}}
-					{{site.Params.currency}}{{.Params.gallery_buy.price}}
-				{{end}}
-				<span style="font-size: small;">*</span>
-				{{if .Params.gallery_buy.price_personalized}}
-				<p class="price">( {{site.Params.currency}}{{.Params.gallery_buy.price_personalized}} <span style="font-size:medium;">personalizado com nome</span> )</p>
-				{{end}}
-			</p>
+			{{if .Params.gallery_buy.price}}
+				<p style="font-weight: 600;"><i class="tf-ion-ios-pricetags"></i> Preço por unidade:</p>
+				<p class="price">
+					{{if .Params.gallery_buy.discount_price}}
+						<s class="price">{{site.Params.currency}}{{ .Params.gallery_buy.price }}</s>
+					{{end}}
+					{{if .Params.gallery_buy.discount_price}}
+						{{site.Params.currency}}{{.Params.gallery_buy.discount_price}}
+					{{else}}
+						{{site.Params.currency}}{{.Params.gallery_buy.price}}
+					{{end}}
+					<span style="font-size: small;">*</span>
+					{{if .Params.gallery_buy.price_personalized}}
+					<p class="price">( {{site.Params.currency}}{{.Params.gallery_buy.price_personalized}} <span style="font-size:medium;">personalizado com nome</span> )</p>
+					{{end}}
+				</p>
+			{{end}}
 		  </div>
 		  {{ if .Site.Params.enable_cart }}
 		  <button class="snipcart-add-item btn btn-main mb-5" 
