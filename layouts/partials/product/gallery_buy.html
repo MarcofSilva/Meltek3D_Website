@@ -74,10 +74,14 @@
 					<li>
 						<strong>{{ i18n "dimensions" }}: </strong>{{ .dimensions }}
 					</li>
-					<li>
-						*{{ .extras }}
-					</li>
 					{{ end }}
+
+					{{if .Params.gallery_buy.price}}
+						<li>
+							*{{ .Params.gallery_buy.info.extras }}
+						</li>
+					{{ end }}
+
 				</ul>
 			  {{.Params.gallery_buy.Content}}
 			</div>
