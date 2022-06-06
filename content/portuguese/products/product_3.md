@@ -34,8 +34,8 @@ gallery_buy:
   enable: true
   title: ""
   # product Price
-  price             : "14.5"
-  price_personalized: "15.5"
+  price             : "15.5"
+  price_personalized: "16.5"
   discount_price    : ""
 
   # product variation

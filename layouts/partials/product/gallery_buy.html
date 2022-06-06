@@ -34,9 +34,15 @@
 					{{else}}
 						{{site.Params.currency}}{{.Params.gallery_buy.price}}
 					{{end}}
+					<span style="font-size: medium;">+ iva</span>
 					<span style="font-size: small;">*</span>
 					{{if .Params.gallery_buy.price_personalized}}
-					<p class="price">( {{site.Params.currency}}{{.Params.gallery_buy.price_personalized}} <span style="font-size:medium;">personalizado com nome</span> )</p>
+					<p class="price">
+						( {{site.Params.currency}}{{.Params.gallery_buy.price_personalized}}
+						<span style="font-size: medium;">+ iva</span>
+						<span style="font-size: small;">*</span>
+						<span style="font-size:medium;">personalizado com nome</span> )
+					</p>
 					{{end}}
 				</p>
 			{{end}}
