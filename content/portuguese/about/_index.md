@@ -4,7 +4,7 @@ description : "Somos isto e aquilo e cenas muito fixes, vocês vão adorar o que
 
 contacts:
   title : "Contactos"
-  mobile : "+351 932812112"
+  mobile : #"+351 932812112"
   email : "meltek3d@gmail.com" #FIXME
   location : "Algarve, Portugal" #TODO Review Algarve?
   content : 
