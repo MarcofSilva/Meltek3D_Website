@@ -6,7 +6,9 @@
         <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         <ul class="list-unstyled contact-list">
-          <li class="mb-3"><i class="tf-ion-ios-telephone mr-2"></i><a href="tel:{{ .mobile }}">{{ .mobile }}</a></li>
+          {{ if .mobile }}
+            <li class="mb-3"><i class="tf-ion-ios-telephone mr-2"></i><a href="tel:{{ .mobile }}">{{ .mobile }}</a></li>
+          {{ end }}
           <li class="mb-3"><i class="tf-ion-email mr-2"></i><a href="mailto:{{ .email }}">{{ .email }}</a></li>
           <li class="mb-3"><i class="tf-ion-ios-location mr-2"></i>{{ .location }}</li>
           

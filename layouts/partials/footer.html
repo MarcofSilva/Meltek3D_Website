@@ -21,7 +21,9 @@
             </li>-->
             {{range first 1 (where site.Pages "Section" "about") }}
             {{ with .Params.contacts }}
-            <li class="list-inline-item"><i class="tf-ion-ios-telephone"></i><a href="tel:{{ .mobile }}">{{ .mobile }}</a></li>
+              {{ if .mobile }}
+                <li class="list-inline-item"><i class="tf-ion-ios-telephone"></i><a href="tel:{{ .mobile }}">{{ .mobile }}</a></li>
+              {{ end }}
             <li class="list-inline-item"><i class="tf-ion-email"></i><a href="mailto:{{ .email }}">{{ .email }}</a></li>
             {{ end }}
             {{ end }}
